@@ -11,13 +11,21 @@ response = urllib2.urlopen("https://galaxyp.msi.umn.edu/api/tools?in_panel=true"
 
 data = json.loads(response.read())
 
-for n in range(1,3):
-    print data[n]['name']
-    print len(data[n]['elems'])
-    for tool in data[n]['elems']:
-        if 'tool_shed_repository' in tool:
-            print '  - name: ' + tool['tool_shed_repository']['name']
-            print '\towner: ' + tool['tool_shed_repository']['owner']
-            print '\ttool_panel_section_label: ' + tool['panel_section_name']
+file = open("tools_galaxyp.yaml", "w")
+
+file.write("---\n"
+           "install_repository_dependencies: true\n"
+           "install_resolver_dependencies: true\n"
+           "install_tool_dependencies: false\n\n"
+           "tools:\n")
+
+for category in data:
+    if 'elems' in category:
+        for tool in category['elems']:
+            if 'tool_shed_repository' in tool:
+                file.write("\n".join(["  - name: " + tool['tool_shed_repository']['name'],
+                           "\t\towner: " + tool['tool_shed_repository']['owner'],
+                           "\t\ttool_panel_section_label: " + tool['panel_section_name'],"\n"]))
             
        
+file.close()
