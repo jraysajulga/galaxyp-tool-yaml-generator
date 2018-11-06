@@ -11,21 +11,31 @@ response = urllib2.urlopen("https://galaxyp.msi.umn.edu/api/tools?in_panel=true"
 
 data = json.loads(response.read())
 
-file = open("tools_galaxyp.yaml", "w")
+yaml_file = open("tools_galaxyp.yaml", "w")
 
-file.write("---\n"
+yaml_file.write("---\n"
            "install_repository_dependencies: true\n"
            "install_resolver_dependencies: true\n"
            "install_tool_dependencies: false\n\n"
            "tools:\n")
 
+sheet_file = open("tools_galaxyp.tsv", "w")
+
+i = 0
 for category in data:
     if 'elems' in category:
         for tool in category['elems']:
             if 'tool_shed_repository' in tool:
-                file.write("\n".join(["  - name: " + tool['tool_shed_repository']['name'],
-                           "\t\towner: " + tool['tool_shed_repository']['owner'],
-                           "\t\ttool_panel_section_label: " + tool['panel_section_name'],"\n"]))
-            
-       
-file.close()
+                name = tool['tool_shed_repository']['name']
+                owner = tool['tool_shed_repository']['owner']
+                section = tool['panel_section_name']
+                yaml_file.write("\n".join(["  - name: " + name,
+                                "\t\towner: " + owner,
+                                "\t\ttool_panel_section_label: " + section,"\n"]))
+                
+                sheet_file.write(section +
+                                 '\t' + name +
+                                 '\t' + owner + '\n')
+               
+yaml_file.close()
+sheet_file.close()
