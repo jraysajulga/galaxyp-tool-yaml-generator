@@ -21,7 +21,9 @@ yaml_file.write("---\n"
 
 sheet_file = open("tools_galaxyp.tsv", "w")
 
-i = 0
+cache = {"name" : [],
+         "owner" : [],
+         "section" : []}
 for category in data:
     if 'elems' in category:
         for tool in category['elems']:
@@ -29,13 +31,24 @@ for category in data:
                 name = tool['tool_shed_repository']['name']
                 owner = tool['tool_shed_repository']['owner']
                 section = tool['panel_section_name']
-                yaml_file.write("\n".join(["  - name: " + name,
-                                "\t\towner: " + owner,
-                                "\t\ttool_panel_section_label: " + section,"\n"]))
+
+                if name in cache["name"]:
+                    index = cache["name"].index(name)
+                    if cache["owner"][index] != owner and cache["section"][index] != section:
+                            yaml_file.write("\n".join(["  - name: " + name,
+                                    "\t\towner: " + owner,
+                                    "\t\ttool_panel_section_label: " + section,"\n"]))
                 
-                sheet_file.write(section +
-                                 '\t' + name +
-                                 '\t' + owner + '\n')
-               
+                            sheet_file.write(section +
+                                             '\t' + name +
+                                             '\t' + owner + '\n')
+                else:
+                    yaml_file.write("\n".join(["  - name: " + name,
+                                    "\t\towner: " + owner,
+                                    "\t\ttool_panel_section_label: " + section,"\n"]))
+                
+                    sheet_file.write(section +
+                                     '\t' + name +
+                                    '\t' + owner + '\n')
 yaml_file.close()
 sheet_file.close()
