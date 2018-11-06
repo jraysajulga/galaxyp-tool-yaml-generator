@@ -50,5 +50,9 @@ for category in data:
                     sheet_file.write(section +
                                      '\t' + name +
                                     '\t' + owner + '\n')
+
+                cache["name"].append(name)
+                cache["owner"].append(owner)
+                cache["section"].append(section)
 yaml_file.close()
 sheet_file.close()
