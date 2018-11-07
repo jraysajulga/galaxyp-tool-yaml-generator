@@ -13,6 +13,7 @@ Text Manipulation	regex_find_replace	galaxyp
 Text Manipulation	concatenate_multiple_datasets	mvdbeek
 Text Manipulation	regex_replace	kellrott
 Text Manipulation	column_maker	devteam
+Text Manipulation	regex_find_replace	jjohnson
 Text Manipulation	find_in_reference	jjohnson
 Filter and Sort	filter_by_fasta_ids	galaxyp
 Filter and Sort	filter_by_substring_match	alan-blakely
@@ -27,6 +28,7 @@ Extract Features	gffread	devteam
 Statistics	peca	caleb-easterly
 Statistics	limma_norm	caleb-easterly
 FASTA manipulation	seq_filter_by_id	peterjc
+FASTA manipulation	filter_by_fasta_ids	galaxyp
 FASTA manipulation	fastqtofasta	devteam
 FASTA manipulation	concat_fasta_files	mandorodriguez
 FASTA manipulation	fasta_to_tabular	devteam
@@ -64,8 +66,10 @@ Protein/Peptide Search Algorithms	msgfplus	galaxyp
 Protein/Peptide Search Algorithms	myrimatch	galaxyp
 Protein/Peptide Search Algorithms	xtandem	iracooke
 Protein/Peptide Search Algorithms	morpheus	galaxyp
+Protein/Peptide Search Algorithms	proteinpilot	galaxyp
 Data Conversion Tools	protxml_to_xls	galaxyp
 Data Conversion Tools	pepxml_to_xls	galaxyp
+Data Conversion Tools	xtandem	iracooke
 Visualizers	psm_eval	galaxyp
 Visualizers	scaffold	galaxyp
 Quantification	proteomics_moff	galaxyp
@@ -116,6 +120,7 @@ NGS: SAM Tools	samtools_fastx	iuc
 NGS: SAM Tools	samtool_filter2	devteam
 NGS: SAM Tools	pileup_interval	devteam
 NGS: SAM Tools	samtools_sort	devteam
+NGS: SAM Tools	samtools_slice_bam	devteam
 NGS: SAM Tools	samtools_rmdup	devteam
 NGS: SAM Tools	samtools_phase	devteam
 NGS: SAM Tools	samtools_mpileup	devteam
@@ -185,6 +190,7 @@ NGS: VCF Tools	vcfannotategenotypes	devteam
 NGS: VCF Tools	vcfannotate	devteam
 NGS: VCF Tools	vcfallelicprimitives	devteam
 NGS: VCF Tools	vcfaddinfo	devteam
+EMBOSS	emboss_5	devteam
 Blast	ncbi_blast_plus	devteam
 Blast	blastxml_to_tabular_selectable	galaxyp
 Picard	picard	devteam
@@ -206,6 +212,7 @@ NGS: GATK Tools	indel_realigner	devteam
 NGS: GATK Tools	variant_filtration	devteam
 NGS: GATK Tools	variant_recalibrator	devteam
 Misc	directag_and_tagrecon	galaxyp
+Misc	myrimatch	galaxyp
 Misc	idpqonvert	galaxyp
 MetaGenomics	kraken_translate	devteam
 MetaGenomics	kraken_report	devteam
@@ -217,16 +224,14 @@ Beta Test Tools	unipept	galaxyp
 Beta Test Tools	spectrast2spectrast_irt	jjohnson
 Beta Test Tools	spectrast	jjohnson
 Beta Test Tools	peptideshaker	jjohnson
-Beta Test Tools	peptideshaker	jjohnson
 Beta Test Tools	reactome_pathwaymatcher	galaxyp
 Beta Test Tools	metaquant	caleb-easterly
 Beta Test Tools	protein_transcript_correlation	pravs
 Beta Test Tools	peptidegenomiccoordinate	pravs
-Beta Test Tools	peptideshaker	jjohnson
-Beta Test Tools	peptideshaker	jjohnson
 Beta Test Tools	mzsqlite_psm_align	galaxyp
 Beta Test Tools	proteomic_cravat_score_and_annotate	rsajulga
 Beta Test Tools	gffutils	jjohnson
+Beta Test Tools	spectrast	galaxyp
 Beta Test Tools	split_file_to_collection	caleb-easterly
 Beta Test Tools	cravat_score_and_annotate	in_silico
 Beta Test Tools	cravat_annotate_mutations	in_silico
@@ -236,6 +241,8 @@ Beta Test Tools	percolator	galaxyp
 Beta Test Tools	jbrowse	iuc
 Beta Test Tools	split_to_collection	jjohnson
 Beta Test Tools	diamond	bgruening
+Beta Test Tools	ncbi_blast_plus	devteam
+Beta Test Tools	defuse	jjohnson
 Beta Test Tools	star_fusion	jjohnson
 Beta Test Tools	msfragger	jjohnson
 Beta Test Tools	pecan	jjohnson
@@ -243,6 +250,7 @@ Beta Test Tools	msms_extractor	pravs
 Beta Test Tools	remove_fasta_subsequences	pravs
 Beta Test Tools	bamtools_split	jjohnson
 Beta Test Tools	psm_zscore	galaxyp
+Beta Test Tools	peptideshaker	galaxyp
 Beta Test Tools	probamconvert	galaxyp
 Beta Test Tools	kobas	iuc
 Beta Test Tools	interproscan5	bgruening
@@ -255,7 +263,11 @@ Beta Test Tools	samplespecificdbgenerator	galaxyp
 Beta Test Tools	tpp_prophets	iracooke
 Beta Test Tools	map_ensembl_peptides_to_bed	galaxyp
 Beta Test Tools	lookup_replace	jjohnson
+Beta Test Tools	map_peptides_to_bed	galaxyp
+Beta Test Tools	morpheus	galaxyp
+Beta Test Tools	psm_eval	galaxyp
 Beta Test Tools	tpp_msconvert	galaxyp
+Beta Test Tools	spectrast	iracooke
 Beta Test Tools	feature_alignment	galaxyp
 Beta Test Tools	pyprophet	galaxyp
 OpenMS	openms_xtandemadapter	galaxyp
@@ -415,7 +427,10 @@ OpenMS	openms_tmtanalyzer	galaxyp
 OpenMS	openms_mapalignmentevaluation	galaxyp
 OpenMS	openms_converttsvtotraml	galaxyp
 OpenMS	openms_converttramltotsv	galaxyp
+TPP	tpp_prophets	iracooke
 SRA ToolKit	sra_tools	iuc
+Omicron	myrimatch	galaxyp
+Omicron	idpqonvert	galaxyp
 Stacks	stacks_procrad	iuc
 Stacks	stacks_refmap	iuc
 Stacks	stacks_cstacks	iuc
@@ -428,8 +443,6 @@ Stacks	stacks_sstacks	iuc
 Stacks	stacks_rxstacks	iuc
 Stacks	stacks_assembleperead	iuc
 Archived Tools	query_tabular	jjohnson
-Archived Tools	query_tabular	jjohnson
-Archived Tools	query_tabular	jjohnson
 Archived Tools	translate_bed_sequences	jjohnson
 Archived Tools	split_tabular_columns	jjohnson
 Protein Affinity	saint_preprocessing	bornea
@@ -441,6 +454,7 @@ Protein Affinity	apostl_static_bubblegraph_generator	bornea
 Protein Affinity	saintexpress	bornea
 Protein Affinity	query_crapome	bornea
 DIA	bibliospec	galaxyp
+DIA	dia_umpire	galaxyp
 GNU Utilities	text_processing	bgruening
 Computational Chemistry	blosum_toolshed	jfb
 Computational Chemistry	pdb2pqr	galaxyp
@@ -460,6 +474,7 @@ MetaProteomics	sixgill	galaxyp
 MetaProteomics	eggnog_mapper	galaxyp
 MetaProteomics	prepare_revigo	caleb-easterly
 MetaProteomics	meta_proteome_analyzer	galaxyp
+MetaProteomics	unipept	galaxyp
 Tools from workflows	group_humann2_uniref_abundances_to_go	bebatut
 Metagenomic analyses	combine_metaphlan2_humann2	bebatut
 Metagenomic analyses	valet	iuc
@@ -657,3 +672,9 @@ Tools from workflows	sortmerna	rnateam
 Tools from workflows	graphlan	iuc
 Tools from workflows	taxonomy_krona_chart	crs4
 Tools from workflows	graphlan_annotate	iuc
+Tools from workflows	trim_galore	bgruening
+Tools from workflows	multiqc	iuc
+Tools from workflows	quast	iuc
+Tools from workflows	megahit	iuc
+Tools from workflows	fastqc	devteam
+Tools from workflows	fastq_to_fasta	devteam

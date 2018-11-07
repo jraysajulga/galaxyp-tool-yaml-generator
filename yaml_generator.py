@@ -21,9 +21,8 @@ yaml_file.write("---\n"
 
 sheet_file = open("tools_galaxyp.tsv", "w")
 
-cache = {"name" : [],
-         "owner" : [],
-         "section" : []}
+# Extracts section, name, and owner into output table
+output = list()
 for category in data:
     if 'elems' in category:
         for tool in category['elems']:
@@ -32,27 +31,20 @@ for category in data:
                 owner = tool['tool_shed_repository']['owner']
                 section = tool['panel_section_name']
 
-                if name in cache["name"]:
-                    index = cache["name"].index(name)
-                    if cache["owner"][index] != owner and cache["section"][index] != section:
-                            yaml_file.write("\n".join(["  - name: " + name,
-                                    "\t\towner: " + owner,
-                                    "\t\ttool_panel_section_label: " + section,"\n"]))
-                
-                            sheet_file.write(section +
-                                             '\t' + name +
-                                             '\t' + owner + '\n')
-                else:
-                    yaml_file.write("\n".join(["  - name: " + name,
-                                    "\t\towner: " + owner,
-                                    "\t\ttool_panel_section_label: " + section,"\n"]))
-                
-                    sheet_file.write(section +
-                                     '\t' + name +
-                                    '\t' + owner + '\n')
+                output.append([section, name, owner])
 
-                cache["name"].append(name)
-                cache["owner"].append(owner)
-                cache["section"].append(section)
+# Removes exact duplicates from the output list
+unique_list = list()
+for interlist in output:
+    if interlist not in unique_list:
+        unique_list.append(interlist)
+
+# Exports the data into a spreadsheet and galaxy YAML file
+for tool in unique_list:
+    sheet_file.write("\t".join(tool) + "\n")
+    yaml_file.write("\n".join(["  - name: " + tool[1],
+                                "\t\towner: " + tool[2],
+                                "\t\ttool_panel_section_label: " + tool[0],"\n"]))
+
 yaml_file.close()
 sheet_file.close()

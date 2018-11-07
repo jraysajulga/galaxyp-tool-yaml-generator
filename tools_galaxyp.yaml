@@ -64,6 +64,10 @@ tools:
 		owner: devteam
 		tool_panel_section_label: Text Manipulation
 
+  - name: regex_find_replace
+		owner: jjohnson
+		tool_panel_section_label: Text Manipulation
+
   - name: find_in_reference
 		owner: jjohnson
 		tool_panel_section_label: Text Manipulation
@@ -118,6 +122,10 @@ tools:
 
   - name: seq_filter_by_id
 		owner: peterjc
+		tool_panel_section_label: FASTA manipulation
+
+  - name: filter_by_fasta_ids
+		owner: galaxyp
 		tool_panel_section_label: FASTA manipulation
 
   - name: fastqtofasta
@@ -268,12 +276,20 @@ tools:
 		owner: galaxyp
 		tool_panel_section_label: Protein/Peptide Search Algorithms
 
+  - name: proteinpilot
+		owner: galaxyp
+		tool_panel_section_label: Protein/Peptide Search Algorithms
+
   - name: protxml_to_xls
 		owner: galaxyp
 		tool_panel_section_label: Data Conversion Tools
 
   - name: pepxml_to_xls
 		owner: galaxyp
+		tool_panel_section_label: Data Conversion Tools
+
+  - name: xtandem
+		owner: iracooke
 		tool_panel_section_label: Data Conversion Tools
 
   - name: psm_eval
@@ -473,6 +489,10 @@ tools:
 		tool_panel_section_label: NGS: SAM Tools
 
   - name: samtools_sort
+		owner: devteam
+		tool_panel_section_label: NGS: SAM Tools
+
+  - name: samtools_slice_bam
 		owner: devteam
 		tool_panel_section_label: NGS: SAM Tools
 
@@ -752,6 +772,10 @@ tools:
 		owner: devteam
 		tool_panel_section_label: NGS: VCF Tools
 
+  - name: emboss_5
+		owner: devteam
+		tool_panel_section_label: EMBOSS
+
   - name: ncbi_blast_plus
 		owner: devteam
 		tool_panel_section_label: Blast
@@ -836,6 +860,10 @@ tools:
 		owner: galaxyp
 		tool_panel_section_label: Misc
 
+  - name: myrimatch
+		owner: galaxyp
+		tool_panel_section_label: Misc
+
   - name: idpqonvert
 		owner: galaxyp
 		tool_panel_section_label: Misc
@@ -880,10 +908,6 @@ tools:
 		owner: jjohnson
 		tool_panel_section_label: Beta Test Tools
 
-  - name: peptideshaker
-		owner: jjohnson
-		tool_panel_section_label: Beta Test Tools
-
   - name: reactome_pathwaymatcher
 		owner: galaxyp
 		tool_panel_section_label: Beta Test Tools
@@ -900,14 +924,6 @@ tools:
 		owner: pravs
 		tool_panel_section_label: Beta Test Tools
 
-  - name: peptideshaker
-		owner: jjohnson
-		tool_panel_section_label: Beta Test Tools
-
-  - name: peptideshaker
-		owner: jjohnson
-		tool_panel_section_label: Beta Test Tools
-
   - name: mzsqlite_psm_align
 		owner: galaxyp
 		tool_panel_section_label: Beta Test Tools
@@ -918,6 +934,10 @@ tools:
 
   - name: gffutils
 		owner: jjohnson
+		tool_panel_section_label: Beta Test Tools
+
+  - name: spectrast
+		owner: galaxyp
 		tool_panel_section_label: Beta Test Tools
 
   - name: split_file_to_collection
@@ -956,6 +976,14 @@ tools:
 		owner: bgruening
 		tool_panel_section_label: Beta Test Tools
 
+  - name: ncbi_blast_plus
+		owner: devteam
+		tool_panel_section_label: Beta Test Tools
+
+  - name: defuse
+		owner: jjohnson
+		tool_panel_section_label: Beta Test Tools
+
   - name: star_fusion
 		owner: jjohnson
 		tool_panel_section_label: Beta Test Tools
@@ -981,6 +1009,10 @@ tools:
 		tool_panel_section_label: Beta Test Tools
 
   - name: psm_zscore
+		owner: galaxyp
+		tool_panel_section_label: Beta Test Tools
+
+  - name: peptideshaker
 		owner: galaxyp
 		tool_panel_section_label: Beta Test Tools
 
@@ -1032,8 +1064,24 @@ tools:
 		owner: jjohnson
 		tool_panel_section_label: Beta Test Tools
 
+  - name: map_peptides_to_bed
+		owner: galaxyp
+		tool_panel_section_label: Beta Test Tools
+
+  - name: morpheus
+		owner: galaxyp
+		tool_panel_section_label: Beta Test Tools
+
+  - name: psm_eval
+		owner: galaxyp
+		tool_panel_section_label: Beta Test Tools
+
   - name: tpp_msconvert
 		owner: galaxyp
+		tool_panel_section_label: Beta Test Tools
+
+  - name: spectrast
+		owner: iracooke
 		tool_panel_section_label: Beta Test Tools
 
   - name: feature_alignment
@@ -1672,9 +1720,21 @@ tools:
 		owner: galaxyp
 		tool_panel_section_label: OpenMS
 
+  - name: tpp_prophets
+		owner: iracooke
+		tool_panel_section_label: TPP
+
   - name: sra_tools
 		owner: iuc
 		tool_panel_section_label: SRA ToolKit
+
+  - name: myrimatch
+		owner: galaxyp
+		tool_panel_section_label: Omicron
+
+  - name: idpqonvert
+		owner: galaxyp
+		tool_panel_section_label: Omicron
 
   - name: stacks_procrad
 		owner: iuc
@@ -1724,14 +1784,6 @@ tools:
 		owner: jjohnson
 		tool_panel_section_label: Archived Tools
 
-  - name: query_tabular
-		owner: jjohnson
-		tool_panel_section_label: Archived Tools
-
-  - name: query_tabular
-		owner: jjohnson
-		tool_panel_section_label: Archived Tools
-
   - name: translate_bed_sequences
 		owner: jjohnson
 		tool_panel_section_label: Archived Tools
@@ -1773,6 +1825,10 @@ tools:
 		tool_panel_section_label: Protein Affinity
 
   - name: bibliospec
+		owner: galaxyp
+		tool_panel_section_label: DIA
+
+  - name: dia_umpire
 		owner: galaxyp
 		tool_panel_section_label: DIA
 
@@ -1849,6 +1905,10 @@ tools:
 		tool_panel_section_label: MetaProteomics
 
   - name: meta_proteome_analyzer
+		owner: galaxyp
+		tool_panel_section_label: MetaProteomics
+
+  - name: unipept
 		owner: galaxyp
 		tool_panel_section_label: MetaProteomics
 
@@ -2638,5 +2698,29 @@ tools:
 
   - name: graphlan_annotate
 		owner: iuc
+		tool_panel_section_label: Tools from workflows
+
+  - name: trim_galore
+		owner: bgruening
+		tool_panel_section_label: Tools from workflows
+
+  - name: multiqc
+		owner: iuc
+		tool_panel_section_label: Tools from workflows
+
+  - name: quast
+		owner: iuc
+		tool_panel_section_label: Tools from workflows
+
+  - name: megahit
+		owner: iuc
+		tool_panel_section_label: Tools from workflows
+
+  - name: fastqc
+		owner: devteam
+		tool_panel_section_label: Tools from workflows
+
+  - name: fastq_to_fasta
+		owner: devteam
 		tool_panel_section_label: Tools from workflows
 
