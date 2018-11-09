@@ -22,12 +22,12 @@ def json_to_tabular(label, url):
                     owner = tool['tool_shed_repository']['owner']
                     section = tool['panel_section_name']
 
-                    output.append([section, name, owner, label])
+                    output.append([section, name, owner])
                     
     return output
 
 
-def remove_duplicates(duplicate_list):
+def remove_exact_duplicates(duplicate_list):
     # Removes exact duplicates from the output list
     unique_list = list()
     for interlist in duplicate_list:
@@ -35,12 +35,20 @@ def remove_duplicates(duplicate_list):
             unique_list.append(interlist)
     return unique_list
 
-def remove_labeled_rows(all_tools, label):
+# Checks name and owner of added tools for any rows already
+# defined in the original tool list
+def remove_unnecessary_tools(original_tools, added_tools):
+    necessary = True
     output = []
-    for tool in all_tools:
-        if tool[3] != label:
-            output.append(tool)
+    for add_tool in added_tools:
+        for orig_tool in original_tools:
+            if add_tool[1] == orig_tool[1] and add_tool[2] == orig_tool[2]:
+                    necessary = False
+                    break
+        if necessary:
+            output.append(add_tool)
     return output
+                    
 
 def export_yaml_and_sheet(unique_list):
     filename = "tools_galaxyp"
@@ -68,8 +76,6 @@ def export_yaml_and_sheet(unique_list):
 
 proteomicsEU_tools = json_to_tabular("proteomicsEU", "https://proteomics.usegalaxy.eu/api/tools?in_panel=true")
 galaxyp_tools = json_to_tabular("galaxyp","https://galaxyp.msi.umn.edu/api/tools?in_panel=true")
+galaxyp_tools = remove_unnecessary_tools(proteomicsEU_tools, galaxyp_tools)
 
-all_tools = remove_duplicates(proteomicsEU_tools + galaxyp_tools)
-trimmed_galaxyp_tools = remove_labeled_rows(all_tools, "proteomicsEU")
-
-export_yaml_and_sheet(trimmed_galaxyp_tools)
+export_yaml_and_sheet(remove_exact_duplicates(galaxyp_tools))
