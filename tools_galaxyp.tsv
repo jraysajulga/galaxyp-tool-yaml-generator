@@ -1,1028 +1,680 @@
-Get Data	sra_tools	iuc
-Get Data	uniprot_rest_interface	bgruening
-Get Data	ensembl_get_sequences	earlhaminst
-Get Data	ensembl_get_genetree	earlhaminst
-Get Data	ensembl_get_feature_info	earlhaminst
-Get Data	ncbi_eutils_ecitmatch	iuc
-Get Data	ncbi_eutils_elink	iuc
-Get Data	ncbi_eutils_egquery	iuc
-Get Data	ncbi_eutils_efetch	iuc
-Get Data	ncbi_eutils_einfo	iuc
-Get Data	ncbi_eutils_epost	iuc
-Get Data	ncbi_eutils_esummary	iuc
-Get Data	ncbi_eutils_esearch	iuc
-Get Data	enasearch_search_data	iuc
-Get Data	enasearch_retrieve_data	iuc
-Get Data	enasearch_retrieve_taxons	iuc
-Get Data	enasearch_retrieve_analysis_report	iuc
-Get Data	enasearch_retrieve_run_report	iuc
-Get Data	ebi_search_rest_results	iuc
-Get Data	unipept	galaxyp
-Get Data	dbbuilder	galaxyp
-Get Data	uniprotxml_downloader	galaxyp
-Get Data	dorina	rnateam
-Get Data	ebi_metagenomics_run_downloader	iuc
-Get Data	ega_download_streamer	yhoogstrate
-Convert Formats	tabular_to_fasta	devteam
-Convert Formats	fasta_to_tabular	devteam
-Convert Formats	tabular_to_fastq	devteam
-Convert Formats	fastqtofasta	devteam
-FASTA/FASTQ manipulation	fastq_to_fasta	devteam
-Convert Formats	fastq_to_tabular	devteam
-Convert Formats	graphicsmagick_image_montage	bgruening
-Convert Formats	graphicsmagick_image_convert	bgruening
-Convert Formats	thermo_raw_file_converter	galaxyp
-Convert Formats	gtftobed12	iuc
-Convert Formats	resize_coordinate_window	iuc
-Convert Formats	ucsc_twobittofa	iuc
-Convert Formats	idpquery	galaxyp
-Convert Formats	gffread	devteam
-Convert Formats	bam_to_scidx	iuc
-Convert Formats	msconvert_nix	galaxyp
-Convert Formats	map_peptides_to_bed	galaxyp
-Convert Formats	msconvert	galaxyp
-Convert Formats	idconvert	galaxyp
-Convert Formats	bigwig_to_bedgraph	bgruening
-Collection Operations	collapse_collections	nml
-Collection Operations	collection_column_join	iuc
-Text Manipulation	dna_filtering	devteam
-Text Manipulation	column_maker	devteam
-Text Manipulation	replace_chromosome_names	earlhaminst
-Text Manipulation	join_files_on_column_fuzzy	bgruening
-Text Manipulation	jq	iuc
-Text Manipulation	text_processing	bgruening
-Text Manipulation	reshape2_cast	iuc
-Text Manipulation	reshape2_melt	iuc
-Operate on Genomic Intervals	basecoverage	devteam
-Join, Subtract and Group	subtract	devteam
-Operate on Genomic Intervals	complement	devteam
-Operate on Genomic Intervals	cluster	devteam
-Text Manipulation	prinseq	iuc
-Text Manipulation	gff3_rebase	iuc
-Text Manipulation	column_remove_by_header	iuc
-Text Manipulation	column_order_header_sort	iuc
-Text Manipulation	replace_column_by_key_value_file	bgruening
-Text Manipulation	add_input_name_as_column	mvdbeek
-Text Manipulation	split_file_on_column	bgruening
-Text Manipulation	coverage	devteam
-Text Manipulation	regex_replace	kellrott
-Text Manipulation	tables_arithmetic_operations	devteam
-Text Manipulation	merge	devteam
-Text Manipulation	intersect	devteam
-Text Manipulation	flanking_features	devteam
-Text Manipulation	join	devteam
-Text Manipulation	get_flanks	devteam
-Text Manipulation	subtract_query	devteam
-Text Manipulation	merge_cols	devteam
-Text Manipulation	unique	bgruening
-Text Manipulation	add_value	devteam
-Filter and Sort	filter_by_fasta_ids	galaxyp
-Filter and Sort	gffcompare	iuc
-Filter and Sort	xpath	iuc
-Filter and Sort	sample_seqs	peterjc
-Filter and Sort	seq_filter_by_id	peterjc
-Filter and Sort	sqlite_to_tabular	jjohnson
-Filter and Sort	column_arrange_by_header	bgruening
-Filter and Sort	find_in_reference	jjohnson
-Filter and Sort	query_tabular	jjohnson
-Join, Subtract and Group	datamash_ops	iuc
-Join, Subtract and Group	datamash_reverse	iuc
-Join, Subtract and Group	datamash_transpose	iuc
-Proteomics	maldi_quant_peak_detection	galaxyp
-Proteomics	cardinal_mz_images	galaxyp
-Proteomics	cardinal_filtering	galaxyp
-Proteomics	maldi_quant_preprocessing	galaxyp
-Proteomics	cardinal_spectra_plots	galaxyp
-Proteomics	cardinal_segmentations	galaxyp
-Proteomics	cardinal_quality_report	galaxyp
-Proteomics	cardinal_preprocessing	galaxyp
-Proteomics	cardinal_data_exporter	galaxyp
-Proteomics	cardinal_combine	galaxyp
-Proteomics	cardinal_classification	galaxyp
-Proteomics	percolator	galaxyp
-Proteomics	lfq_protein_quant	galaxyp
-Proteomics	quantp	galaxyp
-Proteomics	msi_preprocessing	galaxyp
-Proteomics	peptideshaker	galaxyp
-Proteomics	msi_spectra_plot	galaxyp
-Proteomics	msi_qualitycontrol	galaxyp
-Proteomics	msi_filtering	galaxyp
-Proteomics	msi_ion_images	galaxyp
-Proteomics	mass_spectrometry_imaging_segmentations	galaxyp
-Proteomics	msi_combine	galaxyp
-Proteomics	reactome_pathwaymatcher	galaxyp
-Proteomics	msi_classification	galaxyp
-Proteomics	msgfplus	galaxyp
-Proteomics	eggnog_mapper	galaxyp
-Proteomics	protease_prediction	bgruening
-Proteomics	sqlite_to_tabular	iuc
-Proteomics	protein_properties	bgruening
-Proteomics	filter_tabular	iuc
-Proteomics	query_tabular	iuc
-Proteomics	proteomics_moff	galaxyp
-Proteomics	openms_idposteriorerrorprobability	galaxyp
-Proteomics	openms_targetedfileconverter	galaxyp
-Proteomics	openms_idscoreswitcher	galaxyp
-Proteomics	openms_ticcalculator	galaxyp
-Proteomics	openms_spectrafilternlargest	galaxyp
-Proteomics	openms_spectrafilterwindowmower	galaxyp
-Proteomics	openms_qcimporter	galaxyp
-Proteomics	openms_openswathrewritetofeaturexml	galaxyp
-Proteomics	openms_rtmodel	galaxyp
-Proteomics	openms_ptmodel	galaxyp
-Proteomics	openms_proteinresolver	galaxyp
-Proteomics	openms_proteininference	galaxyp
-Proteomics	openms_xmlvalidator	galaxyp
-Proteomics	openms_spectrafilterparentpeakmower	galaxyp
-Proteomics	openms_peakpickerwavelet	galaxyp
-Proteomics	openms_spectrafilterthresholdmower	galaxyp
-Proteomics	openms_openswathmzmlfilecacher	galaxyp
-Proteomics	openms_precursormasscorrector	galaxyp
-Proteomics	openms_spectrastsearchadapter	galaxyp
-Proteomics	openms_qcshrinker	galaxyp
-Proteomics	openms_noisefiltersgolay	galaxyp
-Proteomics	openms_openswathassaygenerator	galaxyp
-Proteomics	openms_rtpredict	galaxyp
-Proteomics	openms_mztabexporter	galaxyp
-Proteomics	openms_speclibsearcher	galaxyp
-Proteomics	openms_multiplexresolver	galaxyp
-Proteomics	openms_xtandemadapter	galaxyp
-Proteomics	openms_qccalculator	galaxyp
-Proteomics	openms_spectrafiltersqrtmower	galaxyp
-Proteomics	openms_metaprosip	galaxyp
-Proteomics	openms_semanticvalidator	galaxyp
-Proteomics	openms_masscalculator	galaxyp
-Proteomics	openms_openpepxl	galaxyp
-Proteomics	openms_mapstatistics	galaxyp
-Proteomics	openms_openswathrtnormalizer	galaxyp
-Proteomics	openms_maprttransformer	galaxyp
-Proteomics	openms_siriusadapter	galaxyp
-Proteomics	openms_spectrafilterscaler	galaxyp
-Proteomics	openms_luciphoradapter	galaxyp
-Proteomics	openms_mapalignerspectrum	galaxyp
-Proteomics	openms_lowmempeakpickerhires	galaxyp
-Proteomics	openms_openswathfilesplitter	galaxyp
-Proteomics	openms_isobaricanalyzer	galaxyp
-Proteomics	openms_transformationevaluation	galaxyp
-Proteomics	openms_internalcalibration	galaxyp
-Proteomics	openms_ptpredict	galaxyp
-Proteomics	openms_mrmpairfinder	galaxyp
-Proteomics	openms_inspectadapter	galaxyp
-Proteomics	openms_openswathconfidencescoring	galaxyp
-Proteomics	openms_inclusionexclusionlistcreator	galaxyp
-Proteomics	openms_openswathworkflow	galaxyp
-Proteomics	openms_idsplitter	galaxyp
-Proteomics	openms_mapaligneridentification	galaxyp
-Proteomics	openms_phosphoscoring	galaxyp
-Proteomics	openms_mascotadapteronline	galaxyp
-Proteomics	openms_mzmlsplitter	galaxyp
-Proteomics	openms_idmerger	galaxyp
-Proteomics	openms_idmassaccuracy	galaxyp
-Proteomics	openms_idmapper	galaxyp
-Proteomics	openms_lowmempeakpickerhires_randomaccess	galaxyp
-Proteomics	openms_idfileconverter	galaxyp
-Proteomics	openms_noisefiltergaussian	galaxyp
-Proteomics	openms_idextractor	galaxyp
-Proteomics	openms_mascotadapter	galaxyp
-Proteomics	openms_iddecoyprobability	galaxyp
-Proteomics	openms_peakpickeriterative	galaxyp
-Proteomics	openms_openswathdiaprescoring	galaxyp
-Proteomics	openms_idconflictresolver	galaxyp
-Proteomics	openms_precursorionselector	galaxyp
-Proteomics	openms_fuzzydiff	galaxyp
-Proteomics	openms_rnpxlsearch	galaxyp
-Proteomics	openms_filefilter	galaxyp
-Proteomics	openms_seedlistgenerator	galaxyp
-Proteomics	openms_fileconverter	galaxyp
-Proteomics	openms_mapnormalizer	galaxyp
-Proteomics	openms_peptideindexer	galaxyp
-Proteomics	openms_featurelinkerunlabeled	galaxyp
-Proteomics	openms_rnpxl	galaxyp
-Proteomics	openms_featurelinkerunlabeledqt	galaxyp
-Proteomics	openms_openswathdecoygenerator	galaxyp
-Proteomics	openms_featurelinkerunlabeledkd	galaxyp
-Proteomics	openms_spectrafilterbernnorm	galaxyp
-Proteomics	openms_featurelinkerlabeled	galaxyp
-Proteomics	openms_mrmmapper	galaxyp
-Proteomics	openms_featurefindersuperhirn	galaxyp
-Proteomics	openms_spectrafilternormalizer	galaxyp
-Proteomics	openms_mrmtransitiongrouppicker	galaxyp
-Proteomics	openms_featurefinderisotopewavelet	galaxyp
-Proteomics	openms_highresprecursormasscorrector	galaxyp
-Proteomics	openms_featurefinderidentification	galaxyp
-Proteomics	openms_fileinfo	galaxyp
-Proteomics	openms_falsediscoveryrate	galaxyp
-Proteomics	openms_svmtheoreticalspectrumgeneratortrainer	galaxyp
-Proteomics	openms_msgfplusadapter	galaxyp
-Proteomics	openms_digestor	galaxyp
-Proteomics	openms_metaboliteadductdecharger	galaxyp
-Proteomics	openms_decoydatabase	galaxyp
-Proteomics	openms_xfdr	galaxyp
-Proteomics	openms_decharger	galaxyp
-Proteomics	openms_psmfeatureextractor	galaxyp
-Proteomics	openms_openpepxllf	galaxyp
-Proteomics	openms_databasefilter	galaxyp
-Proteomics	openms_digestormotif	galaxyp
-Proteomics	openms_speclibcreator	galaxyp
-Proteomics	openms_cvinspector	galaxyp
-Proteomics	openms_rnpxlxicfilter	galaxyp
-Proteomics	openms_rtevaluation	galaxyp
-Proteomics	openms_featurefindermetabo	galaxyp
-Proteomics	openms_mapalignerposeclustering	galaxyp
-Proteomics	openms_cometadapter	galaxyp
-Proteomics	openms_proteinquantifier	galaxyp
-Proteomics	openms_demeanderize	galaxyp
-Proteomics	openms_idripper	galaxyp
-Proteomics	openms_tofcalibration	galaxyp
-Proteomics	openms_peakpickerhires	galaxyp
-Proteomics	openms_dtaextractor	galaxyp
-Proteomics	openms_qcmerger	galaxyp
-Proteomics	openms_labeledeval	galaxyp
-Proteomics	openms_qcextractor	galaxyp
-Proteomics	openms_idfilter	galaxyp
-Proteomics	openms_mssimulator	galaxyp
-Proteomics	openms_erpairfinder	galaxyp
-Proteomics	openms_featurefindermultiplex	galaxyp
-Proteomics	openms_filemerger	galaxyp
-Proteomics	openms_openswathfeaturexmltotsv	galaxyp
-Proteomics	openms_featurefindermrm	galaxyp
-Proteomics	openms_percolatoradapter	galaxyp
-Proteomics	openms_consensusid	galaxyp
-Proteomics	openms_consensusmapnormalizer	galaxyp
-Proteomics	openms_fidoadapter	galaxyp
-Proteomics	openms_compnovo	galaxyp
-Proteomics	openms_spectrafiltermarkermower	galaxyp
-Proteomics	openms_baselinefilter	galaxyp
-Proteomics	openms_additiveseries	galaxyp
-Proteomics	openms_externalcalibration	galaxyp
-Proteomics	openms_accuratemasssearch	galaxyp
-Proteomics	openms_textexporter	galaxyp
-Proteomics	openms_simplesearchengine	galaxyp
-Proteomics	openms_openswathanalyzer	galaxyp
-Proteomics	openms_compnovocid	galaxyp
-Proteomics	openms_qcexporter	galaxyp
-Proteomics	openms_spectramerger	galaxyp
-Proteomics	openms_sequencecoveragecalculator	galaxyp
-Proteomics	openms_metabolitespectralmatcher	galaxyp
-Proteomics	openms_ffeval	galaxyp
-Proteomics	openms_featurefindercentroided	galaxyp
-Proteomics	openms_eicextractor	galaxyp
-Proteomics	openms_qcembedder	galaxyp
-Proteomics	flashlfq	galaxyp
-Proteomics	idpqonvert	galaxyp
-Proteomics	idpquery	galaxyp
-Proteomics	idpassemble	galaxyp
-Proteomics	myrimatch	galaxyp
-Proteomics	query_tabular	jjohnson
-Proteomics	openms_masstraceextractor	galaxyp
-Proteomics	openms_idrtcalibration	galaxyp
-Proteomics	openms_topperc	galaxyp
-Proteomics	openms_openswathchromatogramextractor	galaxyp
-Proteomics	hardklor	galaxyp
-Proteomics	decoyfasta	galaxyp
-Proteomics	morpheus	galaxyp
-Statistics	mine	devteam
-Statistics	plot_from_lda	devteam
-Statistics	lda_analysis	devteam
-Statistics	generate_pc_lda_matrix	devteam
-Statistics	count_gff_features	devteam
-Statistics	correlation	devteam
-Statistics	best_regression_subsets	devteam
-Statistics	principal_component_analysis	devteam
-Statistics	kernel_principal_component_analysis	devteam
-Statistics	kernel_canonical_correlation_analysis	devteam
-Statistics	canonical_correlation_analysis	devteam
-Statistics	dwt_var_perfeature	devteam
-Statistics	t_test_two_samples	devteam
-Statistics	sklearn_feature_selection	bgruening
-Statistics	nn_classifier	bgruening
-Statistics	svm_classifier	bgruening
-Statistics	sklearn_searchcv	bgruening
-Statistics	sklearn_svm_classifier	bgruening
-Statistics	sklearn_build_pipeline	bgruening
-Statistics	sklearn_nn_classifier	bgruening
-Statistics	sklearn_model_validation	bgruening
-Statistics	sklearn_regression_metrics	bgruening
-Statistics	anova	lecorguille
-Statistics	multivariate	ethevenot
-Statistics	univariate	ethevenot
-Statistics	sklearn_generalized_linear	bgruening
-Statistics	sklearn_sample_generator	bgruening
-Statistics	sklearn_numeric_clustering	bgruening
-Statistics	sklearn_clf_metrics	bgruening
-Statistics	sklearn_ensemble	bgruening
-Statistics	sklearn_data_preprocess	bgruening
-Statistics	sklearn_pairwise_metrics	bgruening
-Statistics	scipy_sparse	bgruening
-Statistics	sklearn_discriminant_classifier	bgruening
-Statistics	iwtomics_plotwithscale	iuc
-Statistics	iwtomics_testandplot	iuc
-Statistics	iwtomics_loadandplot	iuc
-Statistics	seq_composition	peterjc
-Statistics	biosigner	ethevenot
-Statistics	transformation	ethevenot
-Statistics	heatmap	ethevenot
-Statistics	numeric_clustering	bgruening
-Graph/Display Data	ucsc_custom_track	devteam
-Graph/Display Data	jbrowse	iuc
-Graph/Display Data	scatterplot	devteam
-Graph/Display Data	histogram	devteam
-Graph/Display Data	gmaj	devteam
-Graph/Display Data	xy_plot	devteam
-Graph/Display Data	volcanoplot	iuc
-Graph/Display Data	newick_utils	iuc
-Graph/Display Data	plotly_ml_performance_plots	bgruening
-Graph/Display Data	nanoplot	iuc
-Graph/Display Data	plotly_parallel_coordinates_plot	bgruening
-Graph/Display Data	bandage	iuc
-Graph/Display Data	intervene	iuc
-Graph/Display Data	pygenometracks	iuc
-Graph/Display Data	ggplot2_histogram	iuc
-Graph/Display Data	ggplot2_point	iuc
-Graph/Display Data	ggplot2_heatmap2	iuc
-Graph/Display Data	ggplot2_violin	iuc
-Graph/Display Data	ggplot2_heatmap	iuc
-Graph/Display Data	ggplot2_pca	iuc
-Graph/Display Data	fasta_nucleotide_color_plot	iuc
-Graph/Display Data	graphlan	iuc
-Graph/Display Data	graphlan_annotate	iuc
-Graph/Display Data	export2graphlan	iuc
-Graph/Display Data	circos	iuc
-Graph/Display Data	tsne	iuc
-Graph/Display Data	krona_text	saskia-hiltemann
-Graph/Display Data	venn_list	peterjc
-Graph/Display Data	mummer	peterjc
-Graph/Display Data	karyotype_plot	guru-ananda
-Get Data	retrieve_ensembl_bed	galaxyp
-Get Data	ms_wiff_loader	galaxyp
-Text Manipulation	query_tabular	iuc
-Text Manipulation	sqlite_to_tabular	iuc
-Text Manipulation	filter_tabular	iuc
-Text Manipulation	datamash_ops	iuc
-Text Manipulation	datamash_reverse	iuc
-Text Manipulation	datamash_transpose	iuc
-Text Manipulation	regex_find_replace	galaxyp
-Text Manipulation	concatenate_multiple_datasets	mvdbeek
-Text Manipulation	regex_find_replace	jjohnson
-Text Manipulation	find_in_reference	jjohnson
-Filter and Sort	filter_by_substring_match	alan-blakely
-Join, Subtract and Group	column_join	jjohnson
-Convert Formats	gffcompare_to_bed	galaxyp
-Convert Formats	bed_to_protein_map	galaxyp
-Convert Formats	fastq_combiner	devteam
-Convert Formats	sqlite_to_tabular	jjohnson
-Convert Formats	translate_bed_sequences	galaxyp
-Extract Features	gffcompare	iuc
-Extract Features	gffread	devteam
-Statistics	peca	caleb-easterly
-Statistics	limma_norm	caleb-easterly
-FASTA manipulation	seq_filter_by_id	peterjc
-FASTA manipulation	filter_by_fasta_ids	galaxyp
-FASTA manipulation	fastqtofasta	devteam
-FASTA manipulation	concat_fasta_files	mandorodriguez
-FASTA manipulation	fasta_to_tabular	devteam
-FASTA manipulation	tabular_to_fasta	devteam
-FASTA manipulation	fasta_compute_length	devteam
-FASTA manipulation	fasta_formatter	devteam
-FASTA manipulation	fasta_filter_by_length	devteam
-FASTA manipulation	sample_seqs	peterjc
-MS Data Conversion	mz_to_sqlite	galaxyp
-MS Data Conversion	msconvert_nix	galaxyp
-MS Data Conversion	mgf_formatter	galaxyp
-MS Data Conversion	msconvert_win	galaxyp
-MS Data Conversion	idconvert	galaxyp
-MS Data Conversion	ms_data_converter	galaxyp
-MS Data Conversion	proteinpilot	galaxyp
-Sequence Database Tools	validate_fasta_database	galaxyp
-Sequence Database Tools	fasta_merge_files_and_filter_unique_sequences	galaxyp
-Sequence Database Tools	dbbuilder	galaxyp
-Sequence Database Tools	uniprotxml_downloader	galaxyp
-Sequence Database Tools	uniprot_rest_interface	bgruening
-Sequence Database Tools	decoyfasta	galaxyp
-NGS: QC and manipulation	fastq_join	lparsons
-NGS: QC and manipulation	fastq_to_fasta	devteam
-NGS: QC and manipulation	fastq_manipulation	devteam
-NGS: QC and manipulation	fastq_quality_filter	devteam
-NGS: QC and manipulation	fastq_quality_converter	devteam
-NGS: QC and manipulation	fastq_paired_end_joiner	devteam
-NGS: QC and manipulation	trimmomatic	pjbriggs
-NGS: QC and manipulation	pear	iuc
-NGS: QC and manipulation	fastq_paired_end_splitter	devteam
-NGS: QC and manipulation	fastq_groomer	devteam
-NGS: QC and manipulation	fastqc	devteam
-Protein/Peptide Search Algorithms	peptideshaker	galaxyp
-Protein/Peptide Search Algorithms	msgfplus	galaxyp
-Protein/Peptide Search Algorithms	myrimatch	galaxyp
-Protein/Peptide Search Algorithms	xtandem	iracooke
-Protein/Peptide Search Algorithms	morpheus	galaxyp
-Protein/Peptide Search Algorithms	proteinpilot	galaxyp
-Data Conversion Tools	protxml_to_xls	galaxyp
-Data Conversion Tools	pepxml_to_xls	galaxyp
-Data Conversion Tools	xtandem	iracooke
-Visualizers	psm_eval	galaxyp
-Visualizers	scaffold	galaxyp
-Quantification	proteomics_moff	galaxyp
-Quantification	flashlfq	galaxyp
-BLAST-P	blast_plus_remote_blastp	galaxyp
-Proteogenomics	quantp	galaxyp
-Proteogenomics	cravatool	galaxyp
-Proteogenomics	pep_pointer	galaxyp
-Proteogenomics	translate_bed	galaxyp
-Proteogenomics	map_peptides_to_bed	galaxyp
-Proteogenomics	custom_pro_db	galaxyp
-Proteogenomics	psm_to_sam	galaxyp
-Proteogenomics	emboss_5	devteam
-Proteogenomics	peptide_to_gff	galaxyp
-NGS: QC and manipulation	multiqc	iuc
-NGS: QC and manipulation	trim_galore	bgruening
-NGS: QC and manipulation	prinseq	iuc
-NGS: RNA Analysis	trinity_gene_to_trans_map	iuc
-NGS: RNA Analysis	defuse	jjohnson
-NGS: RNA Analysis	stringtie	iuc
-NGS: RNA Analysis	pizzly	iuc
-NGS: RNA Analysis	hisat2	iuc
-NGS: RNA Analysis	kallisto_quant	iuc
-NGS: RNA Analysis	kallisto_pseudo	iuc
-NGS: RNA Analysis	cufflinks	devteam
-NGS: RNA Analysis	cummerbund	jjohnson
-NGS: RNA Analysis	cuffquant	devteam
-NGS: RNA Analysis	cuffnorm	devteam
-NGS: RNA Analysis	cuffmerge	devteam
-NGS: RNA Analysis	cuffcompare	devteam
-NGS: RNA Analysis	cuffdiff	devteam
-NGS: RNA Analysis	star_fusion	iuc
-NGS: RNA Analysis	tophat2	devteam
-NGS: RNA Analysis	samtools_slice_bam	devteam
-NGS: RNA Analysis	rsem	jjohnson
-NGS: RNA Analysis	filter_bed_on_splice_junctions	jjohnson
-NGS: RNA Analysis	tophat	devteam
-NGS: Mapping	bwa	devteam
-NGS: Mapping	bowtie2	devteam
-NGS: Mapping	abyss	iuc
-NGS: Mapping	ucsc_blat	yating-l
-NGS: Mapping	bowtie_wrappers	devteam
-NGS: RNA Analysis	trinity_samples_qccheck	iuc
-NGS: RNA Analysis	trinity_align_and_estimate_abundance	iuc
-NGS: RNA Analysis	trinity_abundance_estimates_to_matrix	iuc
-NGS: RNA Analysis	describe_samples	iuc
-NGS: SAM Tools	samtools_fastx	iuc
-NGS: SAM Tools	samtool_filter2	devteam
-NGS: SAM Tools	pileup_interval	devteam
-NGS: SAM Tools	samtools_sort	devteam
-NGS: SAM Tools	samtools_slice_bam	devteam
-NGS: SAM Tools	samtools_rmdup	devteam
-NGS: SAM Tools	samtools_phase	devteam
-NGS: SAM Tools	samtools_mpileup	devteam
-NGS: SAM Tools	samtools_flagstat	devteam
-NGS: SAM Tools	sam_to_bam	devteam
-NGS: SAM Tools	bam_to_sam	devteam
-NGS: SAM Tools	samtools_parallel_mpileup	yhoogstrate
-Bam Tools	bamtools_filter	devteam
-Bam Tools	bamtools	devteam
-Bam Tools	bamtools_split_ref	jjohnson
-Bed Tools	bedtools	iuc
-NGS: Variant	freebayes	devteam
-NGS: Variant	snpsift	iuc
-NGS: Variant	snpeff	iuc
-NGS: Variant	snpeff_to_peptides	jjohnson
-Bcf Tools 	bcftools_view	iuc
-Bcf Tools 	bcftools_cnv	iuc
-Bcf Tools 	bcftools_isec	iuc
-Bcf Tools 	bcftools_norm	iuc
-Bcf Tools 	bcftools_convert_to_vcf	iuc
-Bcf Tools 	bcftools_csq	iuc
-Bcf Tools 	bcftools_convert_from_vcf	iuc
-Bcf Tools 	bcftools_roh	iuc
-Bcf Tools 	bcftools_merge	iuc
-Bcf Tools 	bcftools_plugin_setgt	iuc
-Bcf Tools 	bcftools_plugin_fill_tags	iuc
-Bcf Tools 	bcftools_plugin_counts	iuc
-Bcf Tools 	bcftools_plugin_impute_info	iuc
-Bcf Tools 	bcftools_query_list_samples	iuc
-Bcf Tools 	bcftools_plugin_dosage	iuc
-Bcf Tools 	bcftools_filter	iuc
-Bcf Tools 	bcftools_plugin_missing2ref	iuc
-Bcf Tools 	bcftools_concat	iuc
-Bcf Tools 	bcftools_plugin_mendelian	iuc
-Bcf Tools 	bcftools_plugin_fixploidy	iuc
-Bcf Tools 	bcftools_reheader	iuc
-Bcf Tools 	bcftools_plugin_tag2tag	iuc
-Bcf Tools 	bcftools_annotate	iuc
-Bcf Tools 	bcftools_stats	iuc
-Bcf Tools 	bcftools_mpileup	iuc
-Bcf Tools 	bcftools_call	iuc
-Bcf Tools 	bcftools_query	iuc
-Bcf Tools 	bcftools_consensus	iuc
-Bcf Tools 	bcftools_gtcheck	iuc
-Bcf Tools 	bcftools_plugin_fill_an_ac	iuc
-Bcf Tools 	bcftools_plugin_vcf2sex	iuc
-NGS: VCF Tools	vcf2tsv	devteam
-NGS: VCF Tools	vcfsort	devteam
-NGS: VCF Tools	vcffilter	devteam
-NGS: VCF Tools	vcfvcfintersect	devteam
-NGS: VCF Tools	vcfselectsamples	devteam
-NGS: VCF Tools	vcfrandomsample	devteam
-NGS: VCF Tools	vcfprimers	devteam
-NGS: VCF Tools	vcfleftalign	devteam
-NGS: VCF Tools	vcfgenotypes	devteam
-NGS: VCF Tools	vcfflatten	devteam
-NGS: VCF Tools	vcffixup	devteam
-NGS: VCF Tools	vcfgeno2haplo	devteam
-NGS: VCF Tools	vcfhethom	devteam
-NGS: VCF Tools	vcfdistance	devteam
-NGS: VCF Tools	vcfcommonsamples	devteam
-NGS: VCF Tools	vcfcombine	devteam
-NGS: VCF Tools	vcfbreakcreatemulti	devteam
-NGS: VCF Tools	vcfcheck	devteam
-NGS: VCF Tools	vcfbedintersect	devteam
-NGS: VCF Tools	vcfannotategenotypes	devteam
-NGS: VCF Tools	vcfannotate	devteam
-NGS: VCF Tools	vcfallelicprimitives	devteam
-NGS: VCF Tools	vcfaddinfo	devteam
-EMBOSS	emboss_5	devteam
-Blast	ncbi_blast_plus	devteam
-Blast	blastxml_to_tabular_selectable	galaxyp
-Picard	picard	devteam
-Picard	sam_merge	devteam
-NGS: GATK Tools	variant_select	devteam
-NGS: GATK Tools	print_reads	devteam
-NGS: GATK Tools	table_recalibration	devteam
-NGS: GATK Tools	variant_apply_recalibration	devteam
-NGS: GATK Tools	variant_annotator	devteam
-NGS: GATK Tools	variant_eval	devteam
-NGS: GATK Tools	depth_of_coverage	devteam
-NGS: GATK Tools	variants_validate	devteam
-NGS: GATK Tools	realigner_target_creator	devteam
-NGS: GATK Tools	count_covariates	devteam
-NGS: GATK Tools	variant_combine	devteam
-NGS: GATK Tools	unified_genotyper	devteam
-NGS: GATK Tools	analyze_covariates	devteam
-NGS: GATK Tools	indel_realigner	devteam
-NGS: GATK Tools	variant_filtration	devteam
-NGS: GATK Tools	variant_recalibrator	devteam
-Misc	directag_and_tagrecon	galaxyp
-Misc	myrimatch	galaxyp
-Misc	idpqonvert	galaxyp
-MetaGenomics	kraken_translate	devteam
-MetaGenomics	kraken_report	devteam
-MetaGenomics	kraken_filter	devteam
-MetaGenomics	kraken	devteam
-Beta Test Tools	blosum	oscar_b
-Beta Test Tools	select_random_lines	pravs
-Beta Test Tools	unipept	galaxyp
-Beta Test Tools	spectrast2spectrast_irt	jjohnson
-Beta Test Tools	spectrast	jjohnson
-Beta Test Tools	peptideshaker	jjohnson
-Beta Test Tools	reactome_pathwaymatcher	galaxyp
-Beta Test Tools	metaquant	caleb-easterly
-Beta Test Tools	protein_transcript_correlation	pravs
-Beta Test Tools	peptidegenomiccoordinate	pravs
-Beta Test Tools	mzsqlite_psm_align	galaxyp
-Beta Test Tools	proteomic_cravat_score_and_annotate	rsajulga
-Beta Test Tools	gffutils	jjohnson
-Beta Test Tools	spectrast	galaxyp
-Beta Test Tools	split_file_to_collection	caleb-easterly
-Beta Test Tools	cravat_score_and_annotate	in_silico
-Beta Test Tools	cravat_annotate_mutations	in_silico
-Beta Test Tools	ensembl_cdna_translate	jjohnson
-Beta Test Tools	bed_to_protein_map	jjohnson
-Beta Test Tools	percolator	galaxyp
-Beta Test Tools	jbrowse	iuc
-Beta Test Tools	split_to_collection	jjohnson
-Beta Test Tools	diamond	bgruening
-Beta Test Tools	ncbi_blast_plus	devteam
-Beta Test Tools	defuse	jjohnson
-Beta Test Tools	star_fusion	jjohnson
-Beta Test Tools	msfragger	jjohnson
-Beta Test Tools	pecan	jjohnson
-Beta Test Tools	msms_extractor	pravs
-Beta Test Tools	remove_fasta_subsequences	pravs
-Beta Test Tools	bamtools_split	jjohnson
-Beta Test Tools	psm_zscore	galaxyp
-Beta Test Tools	peptideshaker	galaxyp
-Beta Test Tools	probamconvert	galaxyp
-Beta Test Tools	kobas	iuc
-Beta Test Tools	interproscan5	bgruening
-Beta Test Tools	filterscans	pravs
-Beta Test Tools	idpquery	galaxyp
-Beta Test Tools	idpassemble	galaxyp
-Beta Test Tools	dia_umpire	galaxyp
-Beta Test Tools	trans_proteomic_pipeline	galaxyp
-Beta Test Tools	samplespecificdbgenerator	galaxyp
-Beta Test Tools	tpp_prophets	iracooke
-Beta Test Tools	map_ensembl_peptides_to_bed	galaxyp
-Beta Test Tools	lookup_replace	jjohnson
-Beta Test Tools	map_peptides_to_bed	galaxyp
-Beta Test Tools	morpheus	galaxyp
-Beta Test Tools	psm_eval	galaxyp
-Beta Test Tools	tpp_msconvert	galaxyp
-Beta Test Tools	spectrast	iracooke
-Beta Test Tools	feature_alignment	galaxyp
-Beta Test Tools	pyprophet	galaxyp
-OpenMS	openms_xtandemadapter	galaxyp
-OpenMS	openms_metaprosip	galaxyp
-OpenMS	openms_spectrafilternormalizer	galaxyp
-OpenMS	openms_openswathchromatogramextractor	galaxyp
-OpenMS	openms_spectrafilterbernnorm	galaxyp
-OpenMS	openms_accuratemasssearch	galaxyp
-OpenMS	openms_mapalignerposeclustering	galaxyp
-OpenMS	openms_ptpredict	galaxyp
-OpenMS	openms_seedlistgenerator	galaxyp
-OpenMS	openms_xfdr	galaxyp
-OpenMS	openms_precursormasscorrector	galaxyp
-OpenMS	openms_mrmmapper	galaxyp
-OpenMS	openms_featurelinkerunlabeledqt	galaxyp
-OpenMS	openms_decoydatabase	galaxyp
-OpenMS	openms_qccalculator	galaxyp
-OpenMS	openms_cvinspector	galaxyp
-OpenMS	openms_transformationevaluation	galaxyp
-OpenMS	openms_maprttransformer	galaxyp
-OpenMS	openms_spectrafiltermarkermower	galaxyp
-OpenMS	openms_idripper	galaxyp
-OpenMS	openms_idfileconverter	galaxyp
-OpenMS	openms_rnpxlsearch	galaxyp
-OpenMS	openms_openswathanalyzer	galaxyp
-OpenMS	openms_highresprecursormasscorrector	galaxyp
-OpenMS	openms_idscoreswitcher	galaxyp
-OpenMS	openms_mapnormalizer	galaxyp
-OpenMS	openms_fileconverter	galaxyp
-OpenMS	openms_noisefiltersgolay	galaxyp
-OpenMS	openms_openswathrtnormalizer	galaxyp
-OpenMS	openms_filefilter	galaxyp
-OpenMS	openms_metabolitespectralmatcher	galaxyp
-OpenMS	openms_mzmlsplitter	galaxyp
-OpenMS	openms_consensusid	galaxyp
-OpenMS	openms_ffeval	galaxyp
-OpenMS	openms_rtmodel	galaxyp
-OpenMS	openms_siriusadapter	galaxyp
-OpenMS	openms_speclibsearcher	galaxyp
-OpenMS	openms_sequencecoveragecalculator	galaxyp
-OpenMS	openms_additiveseries	galaxyp
-OpenMS	openms_featurefindercentroided	galaxyp
-OpenMS	openms_svmtheoreticalspectrumgeneratortrainer	galaxyp
-OpenMS	openms_openswathdiaprescoring	galaxyp
-OpenMS	openms_proteininference	galaxyp
-OpenMS	openms_rnpxlxicfilter	galaxyp
-OpenMS	openms_openpepxl	galaxyp
-OpenMS	openms_textexporter	galaxyp
-OpenMS	openms_cometadapter	galaxyp
-OpenMS	openms_digestormotif	galaxyp
-OpenMS	openms_idmassaccuracy	galaxyp
-OpenMS	openms_peakpickeriterative	galaxyp
-OpenMS	openms_internalcalibration	galaxyp
-OpenMS	openms_labeledeval	galaxyp
-OpenMS	openms_filemerger	galaxyp
-OpenMS	openms_lowmempeakpickerhires	galaxyp
-OpenMS	openms_openswathfeaturexmltotsv	galaxyp
-OpenMS	openms_proteinresolver	galaxyp
-OpenMS	openms_peptideindexer	galaxyp
-OpenMS	openms_mapaligneridentification	galaxyp
-OpenMS	openms_msgfplusadapter	galaxyp
-OpenMS	openms_qcimporter	galaxyp
-OpenMS	openms_proteinquantifier	galaxyp
-OpenMS	openms_targetedfileconverter	galaxyp
-OpenMS	openms_idextractor	galaxyp
-OpenMS	openms_percolatoradapter	galaxyp
-OpenMS	openms_fuzzydiff	galaxyp
-OpenMS	openms_rtevaluation	galaxyp
-OpenMS	openms_spectrafilternlargest	galaxyp
-OpenMS	openms_fidoadapter	galaxyp
-OpenMS	openms_rtpredict	galaxyp
-OpenMS	openms_qcexporter	galaxyp
-OpenMS	openms_idsplitter	galaxyp
-OpenMS	openms_compnovocid	galaxyp
-OpenMS	openms_openswathmzmlfilecacher	galaxyp
-OpenMS	openms_simplesearchengine	galaxyp
-OpenMS	openms_isobaricanalyzer	galaxyp
-OpenMS	openms_featurefindermultiplex	galaxyp
-OpenMS	openms_iddecoyprobability	galaxyp
-OpenMS	openms_openswathassaygenerator	galaxyp
-OpenMS	openms_openswathconfidencescoring	galaxyp
-OpenMS	openms_peakpickerwavelet	galaxyp
-OpenMS	openms_psmfeatureextractor	galaxyp
-OpenMS	openms_mapstatistics	galaxyp
-OpenMS	openms_spectrafilterthresholdmower	galaxyp
-OpenMS	openms_mrmpairfinder	galaxyp
-OpenMS	openms_semanticvalidator	galaxyp
-OpenMS	openms_spectrafilterscaler	galaxyp
-OpenMS	openms_featurelinkerlabeled	galaxyp
-OpenMS	openms_featurefindermetabo	galaxyp
-OpenMS	openms_openswathworkflow	galaxyp
-OpenMS	openms_demeanderize	galaxyp
-OpenMS	openms_qcembedder	galaxyp
-OpenMS	openms_xmlvalidator	galaxyp
-OpenMS	openms_openswathdecoygenerator	galaxyp
-OpenMS	openms_falsediscoveryrate	galaxyp
-OpenMS	openms_featurelinkerunlabeledkd	galaxyp
-OpenMS	openms_idmapper	galaxyp
-OpenMS	openms_eicextractor	galaxyp
-OpenMS	openms_idmerger	galaxyp
-OpenMS	openms_inspectadapter	galaxyp
-OpenMS	openms_peakpickerhires	galaxyp
-OpenMS	openms_idposteriorerrorprobability	galaxyp
-OpenMS	openms_mapalignerspectrum	galaxyp
-OpenMS	openms_qcshrinker	galaxyp
-OpenMS	openms_decharger	galaxyp
-OpenMS	openms_featurelinkerunlabeled	galaxyp
-OpenMS	openms_noisefiltergaussian	galaxyp
-OpenMS	openms_openswathfilesplitter	galaxyp
-OpenMS	openms_featurefindersuperhirn	galaxyp
-OpenMS	openms_spectrafilterparentpeakmower	galaxyp
-OpenMS	openms_digestor	galaxyp
-OpenMS	openms_mrmtransitiongrouppicker	galaxyp
-OpenMS	openms_mascotadapter	galaxyp
-OpenMS	openms_featurefinderisotopewavelet	galaxyp
-OpenMS	openms_spectramerger	galaxyp
-OpenMS	openms_masstraceextractor	galaxyp
-OpenMS	openms_mssimulator	galaxyp
-OpenMS	openms_mascotadapteronline	galaxyp
-OpenMS	openms_externalcalibration	galaxyp
-OpenMS	openms_ticcalculator	galaxyp
-OpenMS	openms_mztabexporter	galaxyp
-OpenMS	openms_rnpxl	galaxyp
-OpenMS	openms_tofcalibration	galaxyp
-OpenMS	openms_speclibcreator	galaxyp
-OpenMS	openms_consensusmapnormalizer	galaxyp
-OpenMS	openms_compnovo	galaxyp
-OpenMS	openms_multiplexresolver	galaxyp
-OpenMS	openms_masscalculator	galaxyp
-OpenMS	openms_spectrafilterwindowmower	galaxyp
-OpenMS	openms_erpairfinder	galaxyp
-OpenMS	openms_featurefinderidentification	galaxyp
-OpenMS	openms_inclusionexclusionlistcreator	galaxyp
-OpenMS	openms_lowmempeakpickerhires_randomaccess	galaxyp
-OpenMS	openms_idconflictresolver	galaxyp
-OpenMS	openms_luciphoradapter	galaxyp
-OpenMS	openms_ptmodel	galaxyp
-OpenMS	openms_qcextractor	galaxyp
-OpenMS	openms_baselinefilter	galaxyp
-OpenMS	openms_precursorionselector	galaxyp
-OpenMS	openms_databasefilter	galaxyp
-OpenMS	openms_spectrafiltersqrtmower	galaxyp
-OpenMS	openms_idfilter	galaxyp
-OpenMS	openms_openpepxllf	galaxyp
-OpenMS	openms_phosphoscoring	galaxyp
-OpenMS	openms_featurefindermrm	galaxyp
-OpenMS	openms_openswathrewritetofeaturexml	galaxyp
-OpenMS	openms_qcmerger	galaxyp
-OpenMS	openms_idrtcalibration	galaxyp
-OpenMS	openms_fileinfo	galaxyp
-OpenMS	openms_metaboliteadductdecharger	galaxyp
-OpenMS	openms_dtaextractor	galaxyp
-OpenMS	openms_spectrastsearchadapter	galaxyp
-OpenMS	openms_topperc	galaxyp
-OpenMS	openms_itraqanalyzer	galaxyp
-OpenMS	openms_tmtanalyzer	galaxyp
-OpenMS	openms_mapalignmentevaluation	galaxyp
-OpenMS	openms_converttsvtotraml	galaxyp
-OpenMS	openms_converttramltotsv	galaxyp
-TPP	tpp_prophets	iracooke
-SRA ToolKit	sra_tools	iuc
-Omicron	myrimatch	galaxyp
-Omicron	idpqonvert	galaxyp
-Stacks	stacks_procrad	iuc
-Stacks	stacks_refmap	iuc
-Stacks	stacks_cstacks	iuc
-Stacks	stacks_genotypes	iuc
-Stacks	stacks_populations	iuc
-Stacks	stacks_pstacks	iuc
-Stacks	stacks_denovomap	iuc
-Stacks	stacks_ustacks	iuc
-Stacks	stacks_sstacks	iuc
-Stacks	stacks_rxstacks	iuc
-Stacks	stacks_assembleperead	iuc
-Archived Tools	query_tabular	jjohnson
-Archived Tools	translate_bed_sequences	jjohnson
-Archived Tools	split_tabular_columns	jjohnson
-Protein Affinity	saint_preprocessing	bornea
-Protein Affinity	nsaf_scoring	bornea
-Protein Affinity	prohits_dotplot_generator	bornea
-Protein Affinity	saint_protein_interactions	bornea
-Protein Affinity	filter_fasta	bornea
-Protein Affinity	apostl_static_bubblegraph_generator	bornea
-Protein Affinity	saintexpress	bornea
-Protein Affinity	query_crapome	bornea
-DIA	bibliospec	galaxyp
-DIA	dia_umpire	galaxyp
-GNU Utilities	text_processing	bgruening
-Computational Chemistry	blosum_toolshed	jfb
-Computational Chemistry	pdb2pqr	galaxyp
-Computational Chemistry	st_kinatest	jfb
-Computational Chemistry	st_nmf	jfb
-Computational Chemistry	stcommon_and_dif	jfb
-Computational Chemistry	st_kinamine	jfb
-Computational Chemistry	kinatest_r_7_7testing	jfb
-Computational Chemistry	commonality_finder	jfb
-Computational Chemistry	promap	jfb
-Computational Chemistry	negative_motif_finder_7_7	jfb
-Computational Chemistry	kinamine7_7	jfb
-Epigenetics	methylkit	rnateam
-MetaProteomics	metagene_annotator	galaxyp
-MetaProteomics	sixgill	galaxyp
-MetaProteomics	eggnog_mapper	galaxyp
-MetaProteomics	prepare_revigo	caleb-easterly
-MetaProteomics	meta_proteome_analyzer	galaxyp
-MetaProteomics	unipept	galaxyp
-Tools from workflows	group_humann2_uniref_abundances_to_go	bebatut
-Metagenomic analyses	combine_metaphlan2_humann2	bebatut
-Metagenomic analyses	valet	iuc
-Metagenomic analyses	nonpareil	iuc
-Metagenomic analyses	vsearch	iuc
-Metagenomic analyses	humann2	iuc
-Metagenomic analyses	humann2_regroup_table	iuc
-Metagenomic analyses	humann2_rna_dna_norm	iuc
-Metagenomic analyses	humann2_split_table	iuc
-Metagenomic analyses	humann2_strain_profiler	iuc
-Metagenomic analyses	humann2_associate	iuc
-Metagenomic analyses	humann2_barplot	iuc
-Metagenomic analyses	humann2_split_stratified_table	iuc
-Metagenomic analyses	humann2_unpack_pathways	iuc
-Metagenomic analyses	humann2_renorm_table	iuc
-Metagenomic analyses	humann2_rename_table	iuc
-Metagenomic analyses	humann2_join_tables	iuc
-Metagenomic analyses	humann2_reduce_table	iuc
-Metagenomic analyses	humann2_genefamilies_genus_level	iuc
-Metagenomic analyses	compare_humann2_output	bebatut
-Metagenomic analyses	merge_metaphlan_tables	iuc
-Metagenomic analyses	metaphlan_hclust_heatmap	iuc
-Metagenomic analyses	metaphlan2krona	iuc
-Metagenomic analyses	metaphlan2	iuc
-Metagenomic analyses	format_metaphlan2_output	bebatut
-Multiple Alignments	cdhit	bebatut
-Multiple Alignments	format_cd_hit_output	bebatut
-Assembly	quast	iuc
-Assembly	metaspades	nml
-Assembly	megahit	iuc
-Annotation	fraggenescan	iuc
-Mothur	mothur_make_contigs	iuc
-Mothur	mothur_degap_seqs	iuc
-Mothur	mothur_mimarks_attributes	iuc
-Mothur	mothur_trim_seqs	iuc
-Mothur	mothur_chimera_slayer	iuc
-Mothur	mothur_make_shared	iuc
-Mothur	mothur_taxonomy_to_krona	iuc
-Mothur	mothur_create_database	iuc
-Mothur	mothur_reverse_seqs	iuc
-Mothur	mothur_merge_groups	iuc
-Mothur	mothur_pairwise_seqs	iuc
-Mothur	mothur_sens_spec	iuc
-Mothur	mothur_make_lefse	iuc
-Mothur	mothur_remove_rare	iuc
-Mothur	mothur_get_seqs	iuc
-Mothur	mothur_get_dists	iuc
-Mothur	mothur_metastats	iuc
-Mothur	mothur_make_fastq	iuc
-Mothur	mothur_get_mimarkspackage	iuc
-Mothur	mothur_otu_hierarchy	iuc
-Mothur	mothur_seq_error	iuc
-Mothur	mothur_otu_association	iuc
-Mothur	mothur_merge_files	iuc
-Mothur	mothur_chimera_vsearch	iuc
-Mothur	mothur_merge_taxsummary	iuc
-Mothur	mothur_get_relabund	iuc
-Mothur	mothur_sort_seqs	iuc
-Mothur	mothur_chop_seqs	iuc
-Mothur	mothur_get_otulabels	iuc
-Mothur	mothur_mantel	iuc
-Mothur	mothur_pcoa	iuc
-Mothur	mothur_cluster_fragments	iuc
-Mothur	mothur_heatmap_bin	iuc
-Mothur	mothur_remove_lineage	iuc
-Mothur	mothur_get_groups	iuc
-Mothur	mothur_make_design	iuc
-Mothur	mothur_collect_single	iuc
-Mothur	mothur_make_sra	iuc
-Mothur	mothur_get_communitytype	iuc
-Mothur	mothur_shhh_flows	iuc
-Mothur	mothur_cluster	iuc
-Mothur	mothur_get_coremicrobiome	iuc
-Mothur	mothur_rename_seqs	iuc
-Mothur	mothur_split_groups	iuc
-Mothur	mothur_split_abund	iuc
-Mothur	mothur_heatmap_sim	iuc
-Mothur	mothur_make_biom	iuc
-Mothur	mothur_summary_shared	iuc
-Mothur	mothur_pre_cluster	iuc
-Mothur	mothur_get_group	iuc
-Mothur	mothur_list_seqs	iuc
-Mothur	mothur_clearcut	iuc
-Mothur	mothur_bin_seqs	iuc
-Mothur	mothur_chimera_ccode	iuc
-Mothur	mothur_rarefaction_shared	iuc
-Mothur	mothur_homova	iuc
-Mothur	mothur_get_lineage	iuc
-Mothur	mothur_chimera_check	iuc
-Mothur	mothur_venn	iuc
-Mothur	mothur_chimera_pintail	iuc
-Mothur	mothur_deunique_tree	iuc
-Mothur	mothur_lefse	iuc
-Mothur	mothur_get_otus	iuc
-Mothur	mothur_classify_tree	iuc
-Mothur	mothur_count_seqs	iuc
-Mothur	mothur_chimera_perseus	iuc
-Mothur	mothur_list_otulabels	iuc
-Mothur	mothur_trim_flows	iuc
-Mothur	mothur_fastq_info	iuc
-Mothur	mothur_tree_shared	iuc
-Mothur	mothur_remove_otulabels	iuc
-Mothur	mothur_cooccurrence	iuc
-Mothur	mothur_deunique_seqs	iuc
-Mothur	mothur_get_rabund	iuc
-Mothur	mothur_summary_tax	iuc
-Mothur	mothur_align_check	iuc
-Mothur	mothur_get_sabund	iuc
-Mothur	mothur_consensus_seqs	iuc
-Mothur	mothur_chimera_uchime	iuc
-Mothur	mothur_chimera_bellerophon	iuc
-Mothur	mothur_classify_seqs	iuc
-Mothur	mothur_corr_axes	iuc
-Mothur	mothur_shhh_seqs	iuc
-Mothur	mothur_screen_seqs	iuc
-Mothur	mothur_make_lookup	iuc
-Mothur	mothur_rarefaction_single	iuc
-Mothur	mothur_parse_list	iuc
-Mothur	mothur_remove_groups	iuc
-Mothur	mothur_align_seqs	iuc
-Mothur	mothur_summary_single	iuc
-Mothur	mothur_collect_shared	iuc
-Mothur	mothur_phylo_diversity	iuc
-Mothur	mothur_remove_dists	iuc
-Mothur	mothur_remove_seqs	iuc
-Mothur	mothur_filter_shared	iuc
-Mothur	mothur_filter_seqs	iuc
-Mothur	mothur_nmds	iuc
-Mothur	mothur_summary_qual	iuc
-Mothur	mothur_make_group	iuc
-Mothur	mothur_unifrac_unweighted	iuc
-Mothur	mothur_dist_seqs	iuc
-Mothur	mothur_phylotype	iuc
-Mothur	mothur_get_otulist	iuc
-Mothur	mothur_get_sharedseqs	iuc
-Mothur	mothur_remove_otus	iuc
-Mothur	mothur_merge_sfffiles	iuc
-Mothur	mothur_pca	iuc
-Mothur	mothur_sub_sample	iuc
-Mothur	mothur_get_oturep	iuc
-Mothur	mothur_unique_seqs	iuc
-Mothur	mothur_primer_design	iuc
-Mothur	mothur_parsimony	iuc
-Mothur	mothur_count_groups	iuc
-Mothur	mothur_indicator	iuc
-Mothur	mothur_libshuff	iuc
-Mothur	mothur_merge_count	iuc
-Mothur	mothur_unifrac_weighted	iuc
-Mothur	mothur_sffinfo	iuc
-Mothur	mothur_dist_shared	iuc
-Mothur	mothur_cluster_classic	iuc
-Mothur	mothur_cluster_split	iuc
-Mothur	mothur_summary_seqs	iuc
-Mothur	mothur_normalize_shared	iuc
-Mothur	mothur_pcr_seqs	iuc
-Mothur	mothur_amova	iuc
-Mothur	mothur_anosim	iuc
-Mothur	mothur_classify_otu	iuc
-Mothur	mothur_biom_info	iuc
-Qiime	qiime_filter_otus_from_otu_table	iuc
-Qiime	qiime_filter_fasta	iuc
-Qiime	qiime_count_seqs	iuc
-Qiime	qiime_pick_otus	iuc
-Qiime	qiime_alpha_rarefaction	iuc
-Qiime	qiime_make_emperor	iuc
-Qiime	qiime_multiple_split_libraries_fastq	iuc
-Qiime	qiime_core_diversity	iuc
-Qiime	qiime_compare_categories	iuc
-Qiime	qiime_filter_alignment	iuc
-Qiime	qiime_validate_mapping_file	iuc
-Qiime	qiime_make_phylogeny	iuc
-Qiime	qiime_pick_closed_reference_otus	iuc
-Qiime	qiime_jackknifed_beta_diversity	iuc
-Qiime	qiime_filter_samples_from_otu_table	iuc
-Qiime	qiime_filter_taxa_from_otu_table	iuc
-Qiime	qiime_beta_diversity	iuc
-Qiime	qiime_pick_open_reference_otus	iuc
-Qiime	qiime_split_libraries	iuc
-Qiime	qiime_split_libraries_fastq	iuc
-Qiime	qiime_align_seqs	iuc
-Qiime	qiime_pick_rep_set	iuc
-Qiime	qiime_upgma_cluster	iuc
-Qiime	qiime_alpha_diversity	iuc
-Qiime	qiime_beta_diversity_through_plots	iuc
-Qiime	qiime_assign_taxonomy	iuc
-Qiime	qiime_plot_taxa_summary	iuc
-Qiime	qiime_multiple_join_paired_ends	iuc
-Qiime	qiime_extract_barcodes	iuc
-Qiime	qiime_make_otu_heatmap	iuc
-Qiime	qiime_summarize_taxa_through_plots	iuc
-Qiime	qiime_summarize_taxa	iuc
-HMMER	hmmer3	iuc
-Tools from workflows	export2graphlan	iuc
-Tools from workflows	sortmerna	rnateam
-Tools from workflows	graphlan	iuc
-Tools from workflows	taxonomy_krona_chart	crs4
-Tools from workflows	graphlan_annotate	iuc
-Tools from workflows	trim_galore	bgruening
-Tools from workflows	multiqc	iuc
-Tools from workflows	quast	iuc
-Tools from workflows	megahit	iuc
-Tools from workflows	fastqc	devteam
-Tools from workflows	fastq_to_fasta	devteam
+Get Data	retrieve_ensembl_bed	galaxyp	galaxyp
+Get Data	ms_wiff_loader	galaxyp	galaxyp
+Text Manipulation	query_tabular	iuc	galaxyp
+Text Manipulation	replace_chromosome_names	earlhaminst	galaxyp
+Text Manipulation	sqlite_to_tabular	iuc	galaxyp
+Text Manipulation	filter_tabular	iuc	galaxyp
+Text Manipulation	reshape2_melt	iuc	galaxyp
+Text Manipulation	reshape2_cast	iuc	galaxyp
+Text Manipulation	datamash_ops	iuc	galaxyp
+Text Manipulation	datamash_reverse	iuc	galaxyp
+Text Manipulation	datamash_transpose	iuc	galaxyp
+Text Manipulation	regex_find_replace	galaxyp	galaxyp
+Text Manipulation	concatenate_multiple_datasets	mvdbeek	galaxyp
+Text Manipulation	regex_replace	kellrott	galaxyp
+Text Manipulation	column_maker	devteam	galaxyp
+Text Manipulation	regex_find_replace	jjohnson	galaxyp
+Text Manipulation	find_in_reference	jjohnson	galaxyp
+Filter and Sort	filter_by_fasta_ids	galaxyp	galaxyp
+Filter and Sort	filter_by_substring_match	alan-blakely	galaxyp
+Join, Subtract and Group	column_join	jjohnson	galaxyp
+Convert Formats	gffcompare_to_bed	galaxyp	galaxyp
+Convert Formats	bed_to_protein_map	galaxyp	galaxyp
+Convert Formats	fastq_combiner	devteam	galaxyp
+Convert Formats	sqlite_to_tabular	jjohnson	galaxyp
+Convert Formats	translate_bed_sequences	galaxyp	galaxyp
+Extract Features	gffcompare	iuc	galaxyp
+Extract Features	gffread	devteam	galaxyp
+Statistics	peca	caleb-easterly	galaxyp
+Statistics	limma_norm	caleb-easterly	galaxyp
+FASTA manipulation	seq_filter_by_id	peterjc	galaxyp
+FASTA manipulation	filter_by_fasta_ids	galaxyp	galaxyp
+FASTA manipulation	fastqtofasta	devteam	galaxyp
+FASTA manipulation	concat_fasta_files	mandorodriguez	galaxyp
+FASTA manipulation	fasta_to_tabular	devteam	galaxyp
+FASTA manipulation	tabular_to_fasta	devteam	galaxyp
+FASTA manipulation	fasta_compute_length	devteam	galaxyp
+FASTA manipulation	fasta_formatter	devteam	galaxyp
+FASTA manipulation	fasta_filter_by_length	devteam	galaxyp
+FASTA manipulation	sample_seqs	peterjc	galaxyp
+MS Data Conversion	mz_to_sqlite	galaxyp	galaxyp
+MS Data Conversion	msconvert_nix	galaxyp	galaxyp
+MS Data Conversion	mgf_formatter	galaxyp	galaxyp
+MS Data Conversion	msconvert_win	galaxyp	galaxyp
+MS Data Conversion	idconvert	galaxyp	galaxyp
+MS Data Conversion	ms_data_converter	galaxyp	galaxyp
+MS Data Conversion	proteinpilot	galaxyp	galaxyp
+Sequence Database Tools	validate_fasta_database	galaxyp	galaxyp
+Sequence Database Tools	fasta_merge_files_and_filter_unique_sequences	galaxyp	galaxyp
+Sequence Database Tools	dbbuilder	galaxyp	galaxyp
+Sequence Database Tools	uniprotxml_downloader	galaxyp	galaxyp
+Sequence Database Tools	uniprot_rest_interface	bgruening	galaxyp
+Sequence Database Tools	decoyfasta	galaxyp	galaxyp
+NGS: QC and manipulation	fastq_join	lparsons	galaxyp
+NGS: QC and manipulation	fastq_to_fasta	devteam	galaxyp
+NGS: QC and manipulation	fastq_manipulation	devteam	galaxyp
+NGS: QC and manipulation	fastq_quality_filter	devteam	galaxyp
+NGS: QC and manipulation	fastq_quality_converter	devteam	galaxyp
+NGS: QC and manipulation	fastq_paired_end_joiner	devteam	galaxyp
+NGS: QC and manipulation	trimmomatic	pjbriggs	galaxyp
+NGS: QC and manipulation	pear	iuc	galaxyp
+NGS: QC and manipulation	fastq_paired_end_splitter	devteam	galaxyp
+NGS: QC and manipulation	fastq_groomer	devteam	galaxyp
+NGS: QC and manipulation	fastqc	devteam	galaxyp
+Protein/Peptide Search Algorithms	peptideshaker	galaxyp	galaxyp
+Protein/Peptide Search Algorithms	msgfplus	galaxyp	galaxyp
+Protein/Peptide Search Algorithms	myrimatch	galaxyp	galaxyp
+Protein/Peptide Search Algorithms	xtandem	iracooke	galaxyp
+Protein/Peptide Search Algorithms	morpheus	galaxyp	galaxyp
+Protein/Peptide Search Algorithms	proteinpilot	galaxyp	galaxyp
+Data Conversion Tools	protxml_to_xls	galaxyp	galaxyp
+Data Conversion Tools	pepxml_to_xls	galaxyp	galaxyp
+Data Conversion Tools	xtandem	iracooke	galaxyp
+Visualizers	psm_eval	galaxyp	galaxyp
+Visualizers	scaffold	galaxyp	galaxyp
+Quantification	proteomics_moff	galaxyp	galaxyp
+Quantification	flashlfq	galaxyp	galaxyp
+BLAST-P	blast_plus_remote_blastp	galaxyp	galaxyp
+Proteogenomics	quantp	galaxyp	galaxyp
+Proteogenomics	cravatool	galaxyp	galaxyp
+Proteogenomics	pep_pointer	galaxyp	galaxyp
+Proteogenomics	translate_bed	galaxyp	galaxyp
+Proteogenomics	map_peptides_to_bed	galaxyp	galaxyp
+Proteogenomics	custom_pro_db	galaxyp	galaxyp
+Proteogenomics	psm_to_sam	galaxyp	galaxyp
+Proteogenomics	emboss_5	devteam	galaxyp
+Proteogenomics	peptide_to_gff	galaxyp	galaxyp
+NGS: QC and manipulation	multiqc	iuc	galaxyp
+NGS: QC and manipulation	trim_galore	bgruening	galaxyp
+NGS: QC and manipulation	prinseq	iuc	galaxyp
+NGS: RNA Analysis	trinity_gene_to_trans_map	iuc	galaxyp
+NGS: RNA Analysis	defuse	jjohnson	galaxyp
+NGS: RNA Analysis	stringtie	iuc	galaxyp
+NGS: RNA Analysis	pizzly	iuc	galaxyp
+NGS: RNA Analysis	hisat2	iuc	galaxyp
+NGS: RNA Analysis	kallisto_quant	iuc	galaxyp
+NGS: RNA Analysis	kallisto_pseudo	iuc	galaxyp
+NGS: RNA Analysis	cufflinks	devteam	galaxyp
+NGS: RNA Analysis	cummerbund	jjohnson	galaxyp
+NGS: RNA Analysis	cuffquant	devteam	galaxyp
+NGS: RNA Analysis	cuffnorm	devteam	galaxyp
+NGS: RNA Analysis	cuffmerge	devteam	galaxyp
+NGS: RNA Analysis	cuffcompare	devteam	galaxyp
+NGS: RNA Analysis	cuffdiff	devteam	galaxyp
+NGS: RNA Analysis	star_fusion	iuc	galaxyp
+NGS: RNA Analysis	tophat2	devteam	galaxyp
+NGS: RNA Analysis	samtools_slice_bam	devteam	galaxyp
+NGS: RNA Analysis	rsem	jjohnson	galaxyp
+NGS: RNA Analysis	filter_bed_on_splice_junctions	jjohnson	galaxyp
+NGS: RNA Analysis	tophat	devteam	galaxyp
+NGS: Mapping	bwa	devteam	galaxyp
+NGS: Mapping	bowtie2	devteam	galaxyp
+NGS: Mapping	abyss	iuc	galaxyp
+NGS: Mapping	ucsc_blat	yating-l	galaxyp
+NGS: Mapping	bowtie_wrappers	devteam	galaxyp
+NGS: RNA Analysis	trinity_samples_qccheck	iuc	galaxyp
+NGS: RNA Analysis	trinity_align_and_estimate_abundance	iuc	galaxyp
+NGS: RNA Analysis	trinity_abundance_estimates_to_matrix	iuc	galaxyp
+NGS: RNA Analysis	describe_samples	iuc	galaxyp
+NGS: SAM Tools	samtools_fastx	iuc	galaxyp
+NGS: SAM Tools	samtool_filter2	devteam	galaxyp
+NGS: SAM Tools	pileup_interval	devteam	galaxyp
+NGS: SAM Tools	samtools_sort	devteam	galaxyp
+NGS: SAM Tools	samtools_slice_bam	devteam	galaxyp
+NGS: SAM Tools	samtools_rmdup	devteam	galaxyp
+NGS: SAM Tools	samtools_phase	devteam	galaxyp
+NGS: SAM Tools	samtools_mpileup	devteam	galaxyp
+NGS: SAM Tools	samtools_flagstat	devteam	galaxyp
+NGS: SAM Tools	sam_to_bam	devteam	galaxyp
+NGS: SAM Tools	bam_to_sam	devteam	galaxyp
+NGS: SAM Tools	samtools_parallel_mpileup	yhoogstrate	galaxyp
+Bam Tools	bamtools_filter	devteam	galaxyp
+Bam Tools	bamtools	devteam	galaxyp
+Bam Tools	bamtools_split_ref	jjohnson	galaxyp
+Bed Tools	bedtools	iuc	galaxyp
+NGS: Variant	freebayes	devteam	galaxyp
+NGS: Variant	snpsift	iuc	galaxyp
+NGS: Variant	snpeff	iuc	galaxyp
+NGS: Variant	snpeff_to_peptides	jjohnson	galaxyp
+Bcf Tools 	bcftools_view	iuc	galaxyp
+Bcf Tools 	bcftools_cnv	iuc	galaxyp
+Bcf Tools 	bcftools_isec	iuc	galaxyp
+Bcf Tools 	bcftools_norm	iuc	galaxyp
+Bcf Tools 	bcftools_convert_to_vcf	iuc	galaxyp
+Bcf Tools 	bcftools_csq	iuc	galaxyp
+Bcf Tools 	bcftools_convert_from_vcf	iuc	galaxyp
+Bcf Tools 	bcftools_roh	iuc	galaxyp
+Bcf Tools 	bcftools_merge	iuc	galaxyp
+Bcf Tools 	bcftools_plugin_setgt	iuc	galaxyp
+Bcf Tools 	bcftools_plugin_fill_tags	iuc	galaxyp
+Bcf Tools 	bcftools_plugin_counts	iuc	galaxyp
+Bcf Tools 	bcftools_plugin_impute_info	iuc	galaxyp
+Bcf Tools 	bcftools_query_list_samples	iuc	galaxyp
+Bcf Tools 	bcftools_plugin_dosage	iuc	galaxyp
+Bcf Tools 	bcftools_filter	iuc	galaxyp
+Bcf Tools 	bcftools_plugin_missing2ref	iuc	galaxyp
+Bcf Tools 	bcftools_concat	iuc	galaxyp
+Bcf Tools 	bcftools_plugin_mendelian	iuc	galaxyp
+Bcf Tools 	bcftools_plugin_fixploidy	iuc	galaxyp
+Bcf Tools 	bcftools_reheader	iuc	galaxyp
+Bcf Tools 	bcftools_plugin_tag2tag	iuc	galaxyp
+Bcf Tools 	bcftools_annotate	iuc	galaxyp
+Bcf Tools 	bcftools_stats	iuc	galaxyp
+Bcf Tools 	bcftools_mpileup	iuc	galaxyp
+Bcf Tools 	bcftools_call	iuc	galaxyp
+Bcf Tools 	bcftools_query	iuc	galaxyp
+Bcf Tools 	bcftools_consensus	iuc	galaxyp
+Bcf Tools 	bcftools_gtcheck	iuc	galaxyp
+Bcf Tools 	bcftools_plugin_fill_an_ac	iuc	galaxyp
+Bcf Tools 	bcftools_plugin_vcf2sex	iuc	galaxyp
+NGS: VCF Tools	vcf2tsv	devteam	galaxyp
+NGS: VCF Tools	vcfsort	devteam	galaxyp
+NGS: VCF Tools	vcffilter	devteam	galaxyp
+NGS: VCF Tools	vcfvcfintersect	devteam	galaxyp
+NGS: VCF Tools	vcfselectsamples	devteam	galaxyp
+NGS: VCF Tools	vcfrandomsample	devteam	galaxyp
+NGS: VCF Tools	vcfprimers	devteam	galaxyp
+NGS: VCF Tools	vcfleftalign	devteam	galaxyp
+NGS: VCF Tools	vcfgenotypes	devteam	galaxyp
+NGS: VCF Tools	vcfflatten	devteam	galaxyp
+NGS: VCF Tools	vcffixup	devteam	galaxyp
+NGS: VCF Tools	vcfgeno2haplo	devteam	galaxyp
+NGS: VCF Tools	vcfhethom	devteam	galaxyp
+NGS: VCF Tools	vcfdistance	devteam	galaxyp
+NGS: VCF Tools	vcfcommonsamples	devteam	galaxyp
+NGS: VCF Tools	vcfcombine	devteam	galaxyp
+NGS: VCF Tools	vcfbreakcreatemulti	devteam	galaxyp
+NGS: VCF Tools	vcfcheck	devteam	galaxyp
+NGS: VCF Tools	vcfbedintersect	devteam	galaxyp
+NGS: VCF Tools	vcfannotategenotypes	devteam	galaxyp
+NGS: VCF Tools	vcfannotate	devteam	galaxyp
+NGS: VCF Tools	vcfallelicprimitives	devteam	galaxyp
+NGS: VCF Tools	vcfaddinfo	devteam	galaxyp
+EMBOSS	emboss_5	devteam	galaxyp
+Blast	ncbi_blast_plus	devteam	galaxyp
+Blast	blastxml_to_tabular_selectable	galaxyp	galaxyp
+Picard	picard	devteam	galaxyp
+Picard	sam_merge	devteam	galaxyp
+NGS: GATK Tools	variant_select	devteam	galaxyp
+NGS: GATK Tools	print_reads	devteam	galaxyp
+NGS: GATK Tools	table_recalibration	devteam	galaxyp
+NGS: GATK Tools	variant_apply_recalibration	devteam	galaxyp
+NGS: GATK Tools	variant_annotator	devteam	galaxyp
+NGS: GATK Tools	variant_eval	devteam	galaxyp
+NGS: GATK Tools	depth_of_coverage	devteam	galaxyp
+NGS: GATK Tools	variants_validate	devteam	galaxyp
+NGS: GATK Tools	realigner_target_creator	devteam	galaxyp
+NGS: GATK Tools	count_covariates	devteam	galaxyp
+NGS: GATK Tools	variant_combine	devteam	galaxyp
+NGS: GATK Tools	unified_genotyper	devteam	galaxyp
+NGS: GATK Tools	analyze_covariates	devteam	galaxyp
+NGS: GATK Tools	indel_realigner	devteam	galaxyp
+NGS: GATK Tools	variant_filtration	devteam	galaxyp
+NGS: GATK Tools	variant_recalibrator	devteam	galaxyp
+Misc	directag_and_tagrecon	galaxyp	galaxyp
+Misc	myrimatch	galaxyp	galaxyp
+Misc	idpqonvert	galaxyp	galaxyp
+MetaGenomics	kraken_translate	devteam	galaxyp
+MetaGenomics	kraken_report	devteam	galaxyp
+MetaGenomics	kraken_filter	devteam	galaxyp
+MetaGenomics	kraken	devteam	galaxyp
+Beta Test Tools	blosum	oscar_b	galaxyp
+Beta Test Tools	select_random_lines	pravs	galaxyp
+Beta Test Tools	unipept	galaxyp	galaxyp
+Beta Test Tools	spectrast2spectrast_irt	jjohnson	galaxyp
+Beta Test Tools	spectrast	jjohnson	galaxyp
+Beta Test Tools	peptideshaker	jjohnson	galaxyp
+Beta Test Tools	reactome_pathwaymatcher	galaxyp	galaxyp
+Beta Test Tools	metaquant	caleb-easterly	galaxyp
+Beta Test Tools	protein_transcript_correlation	pravs	galaxyp
+Beta Test Tools	peptidegenomiccoordinate	pravs	galaxyp
+Beta Test Tools	mzsqlite_psm_align	galaxyp	galaxyp
+Beta Test Tools	proteomic_cravat_score_and_annotate	rsajulga	galaxyp
+Beta Test Tools	gffutils	jjohnson	galaxyp
+Beta Test Tools	spectrast	galaxyp	galaxyp
+Beta Test Tools	split_file_to_collection	caleb-easterly	galaxyp
+Beta Test Tools	cravat_score_and_annotate	in_silico	galaxyp
+Beta Test Tools	cravat_annotate_mutations	in_silico	galaxyp
+Beta Test Tools	ensembl_cdna_translate	jjohnson	galaxyp
+Beta Test Tools	bed_to_protein_map	jjohnson	galaxyp
+Beta Test Tools	percolator	galaxyp	galaxyp
+Beta Test Tools	jbrowse	iuc	galaxyp
+Beta Test Tools	split_to_collection	jjohnson	galaxyp
+Beta Test Tools	diamond	bgruening	galaxyp
+Beta Test Tools	ncbi_blast_plus	devteam	galaxyp
+Beta Test Tools	defuse	jjohnson	galaxyp
+Beta Test Tools	star_fusion	jjohnson	galaxyp
+Beta Test Tools	msfragger	jjohnson	galaxyp
+Beta Test Tools	pecan	jjohnson	galaxyp
+Beta Test Tools	msms_extractor	pravs	galaxyp
+Beta Test Tools	remove_fasta_subsequences	pravs	galaxyp
+Beta Test Tools	bamtools_split	jjohnson	galaxyp
+Beta Test Tools	psm_zscore	galaxyp	galaxyp
+Beta Test Tools	peptideshaker	galaxyp	galaxyp
+Beta Test Tools	probamconvert	galaxyp	galaxyp
+Beta Test Tools	kobas	iuc	galaxyp
+Beta Test Tools	interproscan5	bgruening	galaxyp
+Beta Test Tools	filterscans	pravs	galaxyp
+Beta Test Tools	idpquery	galaxyp	galaxyp
+Beta Test Tools	idpassemble	galaxyp	galaxyp
+Beta Test Tools	dia_umpire	galaxyp	galaxyp
+Beta Test Tools	trans_proteomic_pipeline	galaxyp	galaxyp
+Beta Test Tools	samplespecificdbgenerator	galaxyp	galaxyp
+Beta Test Tools	tpp_prophets	iracooke	galaxyp
+Beta Test Tools	map_ensembl_peptides_to_bed	galaxyp	galaxyp
+Beta Test Tools	lookup_replace	jjohnson	galaxyp
+Beta Test Tools	map_peptides_to_bed	galaxyp	galaxyp
+Beta Test Tools	morpheus	galaxyp	galaxyp
+Beta Test Tools	psm_eval	galaxyp	galaxyp
+Beta Test Tools	tpp_msconvert	galaxyp	galaxyp
+Beta Test Tools	spectrast	iracooke	galaxyp
+Beta Test Tools	feature_alignment	galaxyp	galaxyp
+Beta Test Tools	pyprophet	galaxyp	galaxyp
+OpenMS	openms_xtandemadapter	galaxyp	galaxyp
+OpenMS	openms_metaprosip	galaxyp	galaxyp
+OpenMS	openms_spectrafilternormalizer	galaxyp	galaxyp
+OpenMS	openms_openswathchromatogramextractor	galaxyp	galaxyp
+OpenMS	openms_spectrafilterbernnorm	galaxyp	galaxyp
+OpenMS	openms_accuratemasssearch	galaxyp	galaxyp
+OpenMS	openms_mapalignerposeclustering	galaxyp	galaxyp
+OpenMS	openms_ptpredict	galaxyp	galaxyp
+OpenMS	openms_seedlistgenerator	galaxyp	galaxyp
+OpenMS	openms_xfdr	galaxyp	galaxyp
+OpenMS	openms_precursormasscorrector	galaxyp	galaxyp
+OpenMS	openms_mrmmapper	galaxyp	galaxyp
+OpenMS	openms_featurelinkerunlabeledqt	galaxyp	galaxyp
+OpenMS	openms_decoydatabase	galaxyp	galaxyp
+OpenMS	openms_qccalculator	galaxyp	galaxyp
+OpenMS	openms_cvinspector	galaxyp	galaxyp
+OpenMS	openms_transformationevaluation	galaxyp	galaxyp
+OpenMS	openms_maprttransformer	galaxyp	galaxyp
+OpenMS	openms_spectrafiltermarkermower	galaxyp	galaxyp
+OpenMS	openms_idripper	galaxyp	galaxyp
+OpenMS	openms_idfileconverter	galaxyp	galaxyp
+OpenMS	openms_rnpxlsearch	galaxyp	galaxyp
+OpenMS	openms_openswathanalyzer	galaxyp	galaxyp
+OpenMS	openms_highresprecursormasscorrector	galaxyp	galaxyp
+OpenMS	openms_idscoreswitcher	galaxyp	galaxyp
+OpenMS	openms_mapnormalizer	galaxyp	galaxyp
+OpenMS	openms_fileconverter	galaxyp	galaxyp
+OpenMS	openms_noisefiltersgolay	galaxyp	galaxyp
+OpenMS	openms_openswathrtnormalizer	galaxyp	galaxyp
+OpenMS	openms_filefilter	galaxyp	galaxyp
+OpenMS	openms_metabolitespectralmatcher	galaxyp	galaxyp
+OpenMS	openms_mzmlsplitter	galaxyp	galaxyp
+OpenMS	openms_consensusid	galaxyp	galaxyp
+OpenMS	openms_ffeval	galaxyp	galaxyp
+OpenMS	openms_rtmodel	galaxyp	galaxyp
+OpenMS	openms_siriusadapter	galaxyp	galaxyp
+OpenMS	openms_speclibsearcher	galaxyp	galaxyp
+OpenMS	openms_sequencecoveragecalculator	galaxyp	galaxyp
+OpenMS	openms_additiveseries	galaxyp	galaxyp
+OpenMS	openms_featurefindercentroided	galaxyp	galaxyp
+OpenMS	openms_svmtheoreticalspectrumgeneratortrainer	galaxyp	galaxyp
+OpenMS	openms_openswathdiaprescoring	galaxyp	galaxyp
+OpenMS	openms_proteininference	galaxyp	galaxyp
+OpenMS	openms_rnpxlxicfilter	galaxyp	galaxyp
+OpenMS	openms_openpepxl	galaxyp	galaxyp
+OpenMS	openms_textexporter	galaxyp	galaxyp
+OpenMS	openms_cometadapter	galaxyp	galaxyp
+OpenMS	openms_digestormotif	galaxyp	galaxyp
+OpenMS	openms_idmassaccuracy	galaxyp	galaxyp
+OpenMS	openms_peakpickeriterative	galaxyp	galaxyp
+OpenMS	openms_internalcalibration	galaxyp	galaxyp
+OpenMS	openms_labeledeval	galaxyp	galaxyp
+OpenMS	openms_filemerger	galaxyp	galaxyp
+OpenMS	openms_lowmempeakpickerhires	galaxyp	galaxyp
+OpenMS	openms_openswathfeaturexmltotsv	galaxyp	galaxyp
+OpenMS	openms_proteinresolver	galaxyp	galaxyp
+OpenMS	openms_peptideindexer	galaxyp	galaxyp
+OpenMS	openms_mapaligneridentification	galaxyp	galaxyp
+OpenMS	openms_msgfplusadapter	galaxyp	galaxyp
+OpenMS	openms_qcimporter	galaxyp	galaxyp
+OpenMS	openms_proteinquantifier	galaxyp	galaxyp
+OpenMS	openms_targetedfileconverter	galaxyp	galaxyp
+OpenMS	openms_idextractor	galaxyp	galaxyp
+OpenMS	openms_percolatoradapter	galaxyp	galaxyp
+OpenMS	openms_fuzzydiff	galaxyp	galaxyp
+OpenMS	openms_rtevaluation	galaxyp	galaxyp
+OpenMS	openms_spectrafilternlargest	galaxyp	galaxyp
+OpenMS	openms_fidoadapter	galaxyp	galaxyp
+OpenMS	openms_rtpredict	galaxyp	galaxyp
+OpenMS	openms_qcexporter	galaxyp	galaxyp
+OpenMS	openms_idsplitter	galaxyp	galaxyp
+OpenMS	openms_compnovocid	galaxyp	galaxyp
+OpenMS	openms_openswathmzmlfilecacher	galaxyp	galaxyp
+OpenMS	openms_simplesearchengine	galaxyp	galaxyp
+OpenMS	openms_isobaricanalyzer	galaxyp	galaxyp
+OpenMS	openms_featurefindermultiplex	galaxyp	galaxyp
+OpenMS	openms_iddecoyprobability	galaxyp	galaxyp
+OpenMS	openms_openswathassaygenerator	galaxyp	galaxyp
+OpenMS	openms_openswathconfidencescoring	galaxyp	galaxyp
+OpenMS	openms_peakpickerwavelet	galaxyp	galaxyp
+OpenMS	openms_psmfeatureextractor	galaxyp	galaxyp
+OpenMS	openms_mapstatistics	galaxyp	galaxyp
+OpenMS	openms_spectrafilterthresholdmower	galaxyp	galaxyp
+OpenMS	openms_mrmpairfinder	galaxyp	galaxyp
+OpenMS	openms_semanticvalidator	galaxyp	galaxyp
+OpenMS	openms_spectrafilterscaler	galaxyp	galaxyp
+OpenMS	openms_featurelinkerlabeled	galaxyp	galaxyp
+OpenMS	openms_featurefindermetabo	galaxyp	galaxyp
+OpenMS	openms_openswathworkflow	galaxyp	galaxyp
+OpenMS	openms_demeanderize	galaxyp	galaxyp
+OpenMS	openms_qcembedder	galaxyp	galaxyp
+OpenMS	openms_xmlvalidator	galaxyp	galaxyp
+OpenMS	openms_openswathdecoygenerator	galaxyp	galaxyp
+OpenMS	openms_falsediscoveryrate	galaxyp	galaxyp
+OpenMS	openms_featurelinkerunlabeledkd	galaxyp	galaxyp
+OpenMS	openms_idmapper	galaxyp	galaxyp
+OpenMS	openms_eicextractor	galaxyp	galaxyp
+OpenMS	openms_idmerger	galaxyp	galaxyp
+OpenMS	openms_inspectadapter	galaxyp	galaxyp
+OpenMS	openms_peakpickerhires	galaxyp	galaxyp
+OpenMS	openms_idposteriorerrorprobability	galaxyp	galaxyp
+OpenMS	openms_mapalignerspectrum	galaxyp	galaxyp
+OpenMS	openms_qcshrinker	galaxyp	galaxyp
+OpenMS	openms_decharger	galaxyp	galaxyp
+OpenMS	openms_featurelinkerunlabeled	galaxyp	galaxyp
+OpenMS	openms_noisefiltergaussian	galaxyp	galaxyp
+OpenMS	openms_openswathfilesplitter	galaxyp	galaxyp
+OpenMS	openms_featurefindersuperhirn	galaxyp	galaxyp
+OpenMS	openms_spectrafilterparentpeakmower	galaxyp	galaxyp
+OpenMS	openms_digestor	galaxyp	galaxyp
+OpenMS	openms_mrmtransitiongrouppicker	galaxyp	galaxyp
+OpenMS	openms_mascotadapter	galaxyp	galaxyp
+OpenMS	openms_featurefinderisotopewavelet	galaxyp	galaxyp
+OpenMS	openms_spectramerger	galaxyp	galaxyp
+OpenMS	openms_masstraceextractor	galaxyp	galaxyp
+OpenMS	openms_mssimulator	galaxyp	galaxyp
+OpenMS	openms_mascotadapteronline	galaxyp	galaxyp
+OpenMS	openms_externalcalibration	galaxyp	galaxyp
+OpenMS	openms_ticcalculator	galaxyp	galaxyp
+OpenMS	openms_mztabexporter	galaxyp	galaxyp
+OpenMS	openms_rnpxl	galaxyp	galaxyp
+OpenMS	openms_tofcalibration	galaxyp	galaxyp
+OpenMS	openms_speclibcreator	galaxyp	galaxyp
+OpenMS	openms_consensusmapnormalizer	galaxyp	galaxyp
+OpenMS	openms_compnovo	galaxyp	galaxyp
+OpenMS	openms_multiplexresolver	galaxyp	galaxyp
+OpenMS	openms_masscalculator	galaxyp	galaxyp
+OpenMS	openms_spectrafilterwindowmower	galaxyp	galaxyp
+OpenMS	openms_erpairfinder	galaxyp	galaxyp
+OpenMS	openms_featurefinderidentification	galaxyp	galaxyp
+OpenMS	openms_inclusionexclusionlistcreator	galaxyp	galaxyp
+OpenMS	openms_lowmempeakpickerhires_randomaccess	galaxyp	galaxyp
+OpenMS	openms_idconflictresolver	galaxyp	galaxyp
+OpenMS	openms_luciphoradapter	galaxyp	galaxyp
+OpenMS	openms_ptmodel	galaxyp	galaxyp
+OpenMS	openms_qcextractor	galaxyp	galaxyp
+OpenMS	openms_baselinefilter	galaxyp	galaxyp
+OpenMS	openms_precursorionselector	galaxyp	galaxyp
+OpenMS	openms_databasefilter	galaxyp	galaxyp
+OpenMS	openms_spectrafiltersqrtmower	galaxyp	galaxyp
+OpenMS	openms_idfilter	galaxyp	galaxyp
+OpenMS	openms_openpepxllf	galaxyp	galaxyp
+OpenMS	openms_phosphoscoring	galaxyp	galaxyp
+OpenMS	openms_featurefindermrm	galaxyp	galaxyp
+OpenMS	openms_openswathrewritetofeaturexml	galaxyp	galaxyp
+OpenMS	openms_qcmerger	galaxyp	galaxyp
+OpenMS	openms_idrtcalibration	galaxyp	galaxyp
+OpenMS	openms_fileinfo	galaxyp	galaxyp
+OpenMS	openms_metaboliteadductdecharger	galaxyp	galaxyp
+OpenMS	openms_dtaextractor	galaxyp	galaxyp
+OpenMS	openms_spectrastsearchadapter	galaxyp	galaxyp
+OpenMS	openms_topperc	galaxyp	galaxyp
+OpenMS	openms_itraqanalyzer	galaxyp	galaxyp
+OpenMS	openms_tmtanalyzer	galaxyp	galaxyp
+OpenMS	openms_mapalignmentevaluation	galaxyp	galaxyp
+OpenMS	openms_converttsvtotraml	galaxyp	galaxyp
+OpenMS	openms_converttramltotsv	galaxyp	galaxyp
+TPP	tpp_prophets	iracooke	galaxyp
+SRA ToolKit	sra_tools	iuc	galaxyp
+Omicron	myrimatch	galaxyp	galaxyp
+Omicron	idpqonvert	galaxyp	galaxyp
+Stacks	stacks_procrad	iuc	galaxyp
+Stacks	stacks_refmap	iuc	galaxyp
+Stacks	stacks_cstacks	iuc	galaxyp
+Stacks	stacks_genotypes	iuc	galaxyp
+Stacks	stacks_populations	iuc	galaxyp
+Stacks	stacks_pstacks	iuc	galaxyp
+Stacks	stacks_denovomap	iuc	galaxyp
+Stacks	stacks_ustacks	iuc	galaxyp
+Stacks	stacks_sstacks	iuc	galaxyp
+Stacks	stacks_rxstacks	iuc	galaxyp
+Stacks	stacks_assembleperead	iuc	galaxyp
+Archived Tools	query_tabular	jjohnson	galaxyp
+Archived Tools	translate_bed_sequences	jjohnson	galaxyp
+Archived Tools	split_tabular_columns	jjohnson	galaxyp
+Protein Affinity	saint_preprocessing	bornea	galaxyp
+Protein Affinity	nsaf_scoring	bornea	galaxyp
+Protein Affinity	prohits_dotplot_generator	bornea	galaxyp
+Protein Affinity	saint_protein_interactions	bornea	galaxyp
+Protein Affinity	filter_fasta	bornea	galaxyp
+Protein Affinity	apostl_static_bubblegraph_generator	bornea	galaxyp
+Protein Affinity	saintexpress	bornea	galaxyp
+Protein Affinity	query_crapome	bornea	galaxyp
+DIA	bibliospec	galaxyp	galaxyp
+DIA	dia_umpire	galaxyp	galaxyp
+GNU Utilities	text_processing	bgruening	galaxyp
+Computational Chemistry	blosum_toolshed	jfb	galaxyp
+Computational Chemistry	pdb2pqr	galaxyp	galaxyp
+Computational Chemistry	st_kinatest	jfb	galaxyp
+Computational Chemistry	st_nmf	jfb	galaxyp
+Computational Chemistry	stcommon_and_dif	jfb	galaxyp
+Computational Chemistry	st_kinamine	jfb	galaxyp
+Computational Chemistry	kinatest_r_7_7testing	jfb	galaxyp
+Computational Chemistry	commonality_finder	jfb	galaxyp
+Computational Chemistry	promap	jfb	galaxyp
+Computational Chemistry	negative_motif_finder_7_7	jfb	galaxyp
+Computational Chemistry	kinamine7_7	jfb	galaxyp
+Collection Operations	collapse_collections	nml	galaxyp
+Epigenetics	methylkit	rnateam	galaxyp
+MetaProteomics	metagene_annotator	galaxyp	galaxyp
+MetaProteomics	sixgill	galaxyp	galaxyp
+MetaProteomics	eggnog_mapper	galaxyp	galaxyp
+MetaProteomics	prepare_revigo	caleb-easterly	galaxyp
+MetaProteomics	meta_proteome_analyzer	galaxyp	galaxyp
+MetaProteomics	unipept	galaxyp	galaxyp
+Tools from workflows	group_humann2_uniref_abundances_to_go	bebatut	galaxyp
+Metagenomic analyses	combine_metaphlan2_humann2	bebatut	galaxyp
+Metagenomic analyses	valet	iuc	galaxyp
+Metagenomic analyses	nonpareil	iuc	galaxyp
+Metagenomic analyses	vsearch	iuc	galaxyp
+Metagenomic analyses	humann2	iuc	galaxyp
+Metagenomic analyses	humann2_regroup_table	iuc	galaxyp
+Metagenomic analyses	humann2_rna_dna_norm	iuc	galaxyp
+Metagenomic analyses	humann2_split_table	iuc	galaxyp
+Metagenomic analyses	humann2_strain_profiler	iuc	galaxyp
+Metagenomic analyses	humann2_associate	iuc	galaxyp
+Metagenomic analyses	humann2_barplot	iuc	galaxyp
+Metagenomic analyses	humann2_split_stratified_table	iuc	galaxyp
+Metagenomic analyses	humann2_unpack_pathways	iuc	galaxyp
+Metagenomic analyses	humann2_renorm_table	iuc	galaxyp
+Metagenomic analyses	humann2_rename_table	iuc	galaxyp
+Metagenomic analyses	humann2_join_tables	iuc	galaxyp
+Metagenomic analyses	humann2_reduce_table	iuc	galaxyp
+Metagenomic analyses	humann2_genefamilies_genus_level	iuc	galaxyp
+Metagenomic analyses	compare_humann2_output	bebatut	galaxyp
+Metagenomic analyses	merge_metaphlan_tables	iuc	galaxyp
+Metagenomic analyses	metaphlan_hclust_heatmap	iuc	galaxyp
+Metagenomic analyses	metaphlan2krona	iuc	galaxyp
+Metagenomic analyses	metaphlan2	iuc	galaxyp
+Metagenomic analyses	format_metaphlan2_output	bebatut	galaxyp
+Multiple Alignments	cdhit	bebatut	galaxyp
+Multiple Alignments	format_cd_hit_output	bebatut	galaxyp
+Assembly	quast	iuc	galaxyp
+Assembly	metaspades	nml	galaxyp
+Assembly	megahit	iuc	galaxyp
+Annotation	fraggenescan	iuc	galaxyp
+Mothur	mothur_make_contigs	iuc	galaxyp
+Mothur	mothur_degap_seqs	iuc	galaxyp
+Mothur	mothur_mimarks_attributes	iuc	galaxyp
+Mothur	mothur_trim_seqs	iuc	galaxyp
+Mothur	mothur_chimera_slayer	iuc	galaxyp
+Mothur	mothur_make_shared	iuc	galaxyp
+Mothur	mothur_taxonomy_to_krona	iuc	galaxyp
+Mothur	mothur_create_database	iuc	galaxyp
+Mothur	mothur_reverse_seqs	iuc	galaxyp
+Mothur	mothur_merge_groups	iuc	galaxyp
+Mothur	mothur_pairwise_seqs	iuc	galaxyp
+Mothur	mothur_sens_spec	iuc	galaxyp
+Mothur	mothur_make_lefse	iuc	galaxyp
+Mothur	mothur_remove_rare	iuc	galaxyp
+Mothur	mothur_get_seqs	iuc	galaxyp
+Mothur	mothur_get_dists	iuc	galaxyp
+Mothur	mothur_metastats	iuc	galaxyp
+Mothur	mothur_make_fastq	iuc	galaxyp
+Mothur	mothur_get_mimarkspackage	iuc	galaxyp
+Mothur	mothur_otu_hierarchy	iuc	galaxyp
+Mothur	mothur_seq_error	iuc	galaxyp
+Mothur	mothur_otu_association	iuc	galaxyp
+Mothur	mothur_merge_files	iuc	galaxyp
+Mothur	mothur_chimera_vsearch	iuc	galaxyp
+Mothur	mothur_merge_taxsummary	iuc	galaxyp
+Mothur	mothur_get_relabund	iuc	galaxyp
+Mothur	mothur_sort_seqs	iuc	galaxyp
+Mothur	mothur_chop_seqs	iuc	galaxyp
+Mothur	mothur_get_otulabels	iuc	galaxyp
+Mothur	mothur_mantel	iuc	galaxyp
+Mothur	mothur_pcoa	iuc	galaxyp
+Mothur	mothur_cluster_fragments	iuc	galaxyp
+Mothur	mothur_heatmap_bin	iuc	galaxyp
+Mothur	mothur_remove_lineage	iuc	galaxyp
+Mothur	mothur_get_groups	iuc	galaxyp
+Mothur	mothur_make_design	iuc	galaxyp
+Mothur	mothur_collect_single	iuc	galaxyp
+Mothur	mothur_make_sra	iuc	galaxyp
+Mothur	mothur_get_communitytype	iuc	galaxyp
+Mothur	mothur_shhh_flows	iuc	galaxyp
+Mothur	mothur_cluster	iuc	galaxyp
+Mothur	mothur_get_coremicrobiome	iuc	galaxyp
+Mothur	mothur_rename_seqs	iuc	galaxyp
+Mothur	mothur_split_groups	iuc	galaxyp
+Mothur	mothur_split_abund	iuc	galaxyp
+Mothur	mothur_heatmap_sim	iuc	galaxyp
+Mothur	mothur_make_biom	iuc	galaxyp
+Mothur	mothur_summary_shared	iuc	galaxyp
+Mothur	mothur_pre_cluster	iuc	galaxyp
+Mothur	mothur_get_group	iuc	galaxyp
+Mothur	mothur_list_seqs	iuc	galaxyp
+Mothur	mothur_clearcut	iuc	galaxyp
+Mothur	mothur_bin_seqs	iuc	galaxyp
+Mothur	mothur_chimera_ccode	iuc	galaxyp
+Mothur	mothur_rarefaction_shared	iuc	galaxyp
+Mothur	mothur_homova	iuc	galaxyp
+Mothur	mothur_get_lineage	iuc	galaxyp
+Mothur	mothur_chimera_check	iuc	galaxyp
+Mothur	mothur_venn	iuc	galaxyp
+Mothur	mothur_chimera_pintail	iuc	galaxyp
+Mothur	mothur_deunique_tree	iuc	galaxyp
+Mothur	mothur_lefse	iuc	galaxyp
+Mothur	mothur_get_otus	iuc	galaxyp
+Mothur	mothur_classify_tree	iuc	galaxyp
+Mothur	mothur_count_seqs	iuc	galaxyp
+Mothur	mothur_chimera_perseus	iuc	galaxyp
+Mothur	mothur_list_otulabels	iuc	galaxyp
+Mothur	mothur_trim_flows	iuc	galaxyp
+Mothur	mothur_fastq_info	iuc	galaxyp
+Mothur	mothur_tree_shared	iuc	galaxyp
+Mothur	mothur_remove_otulabels	iuc	galaxyp
+Mothur	mothur_cooccurrence	iuc	galaxyp
+Mothur	mothur_deunique_seqs	iuc	galaxyp
+Mothur	mothur_get_rabund	iuc	galaxyp
+Mothur	mothur_summary_tax	iuc	galaxyp
+Mothur	mothur_align_check	iuc	galaxyp
+Mothur	mothur_get_sabund	iuc	galaxyp
+Mothur	mothur_consensus_seqs	iuc	galaxyp
+Mothur	mothur_chimera_uchime	iuc	galaxyp
+Mothur	mothur_chimera_bellerophon	iuc	galaxyp
+Mothur	mothur_classify_seqs	iuc	galaxyp
+Mothur	mothur_corr_axes	iuc	galaxyp
+Mothur	mothur_shhh_seqs	iuc	galaxyp
+Mothur	mothur_screen_seqs	iuc	galaxyp
+Mothur	mothur_make_lookup	iuc	galaxyp
+Mothur	mothur_rarefaction_single	iuc	galaxyp
+Mothur	mothur_parse_list	iuc	galaxyp
+Mothur	mothur_remove_groups	iuc	galaxyp
+Mothur	mothur_align_seqs	iuc	galaxyp
+Mothur	mothur_summary_single	iuc	galaxyp
+Mothur	mothur_collect_shared	iuc	galaxyp
+Mothur	mothur_phylo_diversity	iuc	galaxyp
+Mothur	mothur_remove_dists	iuc	galaxyp
+Mothur	mothur_remove_seqs	iuc	galaxyp
+Mothur	mothur_filter_shared	iuc	galaxyp
+Mothur	mothur_filter_seqs	iuc	galaxyp
+Mothur	mothur_nmds	iuc	galaxyp
+Mothur	mothur_summary_qual	iuc	galaxyp
+Mothur	mothur_make_group	iuc	galaxyp
+Mothur	mothur_unifrac_unweighted	iuc	galaxyp
+Mothur	mothur_dist_seqs	iuc	galaxyp
+Mothur	mothur_phylotype	iuc	galaxyp
+Mothur	mothur_get_otulist	iuc	galaxyp
+Mothur	mothur_get_sharedseqs	iuc	galaxyp
+Mothur	mothur_remove_otus	iuc	galaxyp
+Mothur	mothur_merge_sfffiles	iuc	galaxyp
+Mothur	mothur_pca	iuc	galaxyp
+Mothur	mothur_sub_sample	iuc	galaxyp
+Mothur	mothur_get_oturep	iuc	galaxyp
+Mothur	mothur_unique_seqs	iuc	galaxyp
+Mothur	mothur_primer_design	iuc	galaxyp
+Mothur	mothur_parsimony	iuc	galaxyp
+Mothur	mothur_count_groups	iuc	galaxyp
+Mothur	mothur_indicator	iuc	galaxyp
+Mothur	mothur_libshuff	iuc	galaxyp
+Mothur	mothur_merge_count	iuc	galaxyp
+Mothur	mothur_unifrac_weighted	iuc	galaxyp
+Mothur	mothur_sffinfo	iuc	galaxyp
+Mothur	mothur_dist_shared	iuc	galaxyp
+Mothur	mothur_cluster_classic	iuc	galaxyp
+Mothur	mothur_cluster_split	iuc	galaxyp
+Mothur	mothur_summary_seqs	iuc	galaxyp
+Mothur	mothur_normalize_shared	iuc	galaxyp
+Mothur	mothur_pcr_seqs	iuc	galaxyp
+Mothur	mothur_amova	iuc	galaxyp
+Mothur	mothur_anosim	iuc	galaxyp
+Mothur	mothur_classify_otu	iuc	galaxyp
+Mothur	mothur_biom_info	iuc	galaxyp
+Qiime	qiime_filter_otus_from_otu_table	iuc	galaxyp
+Qiime	qiime_filter_fasta	iuc	galaxyp
+Qiime	qiime_count_seqs	iuc	galaxyp
+Qiime	qiime_pick_otus	iuc	galaxyp
+Qiime	qiime_alpha_rarefaction	iuc	galaxyp
+Qiime	qiime_make_emperor	iuc	galaxyp
+Qiime	qiime_multiple_split_libraries_fastq	iuc	galaxyp
+Qiime	qiime_core_diversity	iuc	galaxyp
+Qiime	qiime_compare_categories	iuc	galaxyp
+Qiime	qiime_filter_alignment	iuc	galaxyp
+Qiime	qiime_validate_mapping_file	iuc	galaxyp
+Qiime	qiime_make_phylogeny	iuc	galaxyp
+Qiime	qiime_pick_closed_reference_otus	iuc	galaxyp
+Qiime	qiime_jackknifed_beta_diversity	iuc	galaxyp
+Qiime	qiime_filter_samples_from_otu_table	iuc	galaxyp
+Qiime	qiime_filter_taxa_from_otu_table	iuc	galaxyp
+Qiime	qiime_beta_diversity	iuc	galaxyp
+Qiime	qiime_pick_open_reference_otus	iuc	galaxyp
+Qiime	qiime_split_libraries	iuc	galaxyp
+Qiime	qiime_split_libraries_fastq	iuc	galaxyp
+Qiime	qiime_align_seqs	iuc	galaxyp
+Qiime	qiime_pick_rep_set	iuc	galaxyp
+Qiime	qiime_upgma_cluster	iuc	galaxyp
+Qiime	qiime_alpha_diversity	iuc	galaxyp
+Qiime	qiime_beta_diversity_through_plots	iuc	galaxyp
+Qiime	qiime_assign_taxonomy	iuc	galaxyp
+Qiime	qiime_plot_taxa_summary	iuc	galaxyp
+Qiime	qiime_multiple_join_paired_ends	iuc	galaxyp
+Qiime	qiime_extract_barcodes	iuc	galaxyp
+Qiime	qiime_make_otu_heatmap	iuc	galaxyp
+Qiime	qiime_summarize_taxa_through_plots	iuc	galaxyp
+Qiime	qiime_summarize_taxa	iuc	galaxyp
+HMMER	hmmer3	iuc	galaxyp
+Tools from workflows	export2graphlan	iuc	galaxyp
+Tools from workflows	sortmerna	rnateam	galaxyp
+Tools from workflows	graphlan	iuc	galaxyp
+Tools from workflows	taxonomy_krona_chart	crs4	galaxyp
+Tools from workflows	graphlan_annotate	iuc	galaxyp
+Tools from workflows	trim_galore	bgruening	galaxyp
+Tools from workflows	multiqc	iuc	galaxyp
+Tools from workflows	quast	iuc	galaxyp
+Tools from workflows	megahit	iuc	galaxyp
+Tools from workflows	fastqc	devteam	galaxyp
+Tools from workflows	fastq_to_fasta	devteam	galaxyp
