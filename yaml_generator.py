@@ -38,9 +38,9 @@ def remove_exact_duplicates(duplicate_list):
 # Checks name and owner of added tools for any rows already
 # defined in the original tool list
 def remove_unnecessary_tools(original_tools, added_tools):
-    necessary = True
     output = []
     for add_tool in added_tools:
+        necessary = True
         for orig_tool in original_tools:
             if add_tool[1] == orig_tool[1] and add_tool[2] == orig_tool[2]:
                     necessary = False
