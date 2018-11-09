@@ -1,21 +1,370 @@
+Get Data	sra_tools	iuc
+Get Data	uniprot_rest_interface	bgruening
+Get Data	ensembl_get_sequences	earlhaminst
+Get Data	ensembl_get_genetree	earlhaminst
+Get Data	ensembl_get_feature_info	earlhaminst
+Get Data	ncbi_eutils_ecitmatch	iuc
+Get Data	ncbi_eutils_elink	iuc
+Get Data	ncbi_eutils_egquery	iuc
+Get Data	ncbi_eutils_efetch	iuc
+Get Data	ncbi_eutils_einfo	iuc
+Get Data	ncbi_eutils_epost	iuc
+Get Data	ncbi_eutils_esummary	iuc
+Get Data	ncbi_eutils_esearch	iuc
+Get Data	enasearch_search_data	iuc
+Get Data	enasearch_retrieve_data	iuc
+Get Data	enasearch_retrieve_taxons	iuc
+Get Data	enasearch_retrieve_analysis_report	iuc
+Get Data	enasearch_retrieve_run_report	iuc
+Get Data	ebi_search_rest_results	iuc
+Get Data	unipept	galaxyp
+Get Data	dbbuilder	galaxyp
+Get Data	uniprotxml_downloader	galaxyp
+Get Data	dorina	rnateam
+Get Data	ebi_metagenomics_run_downloader	iuc
+Get Data	ega_download_streamer	yhoogstrate
+Convert Formats	tabular_to_fasta	devteam
+Convert Formats	fasta_to_tabular	devteam
+Convert Formats	tabular_to_fastq	devteam
+Convert Formats	fastqtofasta	devteam
+FASTA/FASTQ manipulation	fastq_to_fasta	devteam
+Convert Formats	fastq_to_tabular	devteam
+Convert Formats	graphicsmagick_image_montage	bgruening
+Convert Formats	graphicsmagick_image_convert	bgruening
+Convert Formats	thermo_raw_file_converter	galaxyp
+Convert Formats	gtftobed12	iuc
+Convert Formats	resize_coordinate_window	iuc
+Convert Formats	ucsc_twobittofa	iuc
+Convert Formats	idpquery	galaxyp
+Convert Formats	gffread	devteam
+Convert Formats	bam_to_scidx	iuc
+Convert Formats	msconvert_nix	galaxyp
+Convert Formats	map_peptides_to_bed	galaxyp
+Convert Formats	msconvert	galaxyp
+Convert Formats	idconvert	galaxyp
+Convert Formats	bigwig_to_bedgraph	bgruening
+Collection Operations	collapse_collections	nml
+Collection Operations	collection_column_join	iuc
+Text Manipulation	dna_filtering	devteam
+Text Manipulation	column_maker	devteam
+Text Manipulation	replace_chromosome_names	earlhaminst
+Text Manipulation	join_files_on_column_fuzzy	bgruening
+Text Manipulation	jq	iuc
+Text Manipulation	text_processing	bgruening
+Text Manipulation	reshape2_cast	iuc
+Text Manipulation	reshape2_melt	iuc
+Operate on Genomic Intervals	basecoverage	devteam
+Join, Subtract and Group	subtract	devteam
+Operate on Genomic Intervals	complement	devteam
+Operate on Genomic Intervals	cluster	devteam
+Text Manipulation	prinseq	iuc
+Text Manipulation	gff3_rebase	iuc
+Text Manipulation	column_remove_by_header	iuc
+Text Manipulation	column_order_header_sort	iuc
+Text Manipulation	replace_column_by_key_value_file	bgruening
+Text Manipulation	add_input_name_as_column	mvdbeek
+Text Manipulation	split_file_on_column	bgruening
+Text Manipulation	coverage	devteam
+Text Manipulation	regex_replace	kellrott
+Text Manipulation	tables_arithmetic_operations	devteam
+Text Manipulation	merge	devteam
+Text Manipulation	intersect	devteam
+Text Manipulation	flanking_features	devteam
+Text Manipulation	join	devteam
+Text Manipulation	get_flanks	devteam
+Text Manipulation	subtract_query	devteam
+Text Manipulation	merge_cols	devteam
+Text Manipulation	unique	bgruening
+Text Manipulation	add_value	devteam
+Filter and Sort	filter_by_fasta_ids	galaxyp
+Filter and Sort	gffcompare	iuc
+Filter and Sort	xpath	iuc
+Filter and Sort	sample_seqs	peterjc
+Filter and Sort	seq_filter_by_id	peterjc
+Filter and Sort	sqlite_to_tabular	jjohnson
+Filter and Sort	column_arrange_by_header	bgruening
+Filter and Sort	find_in_reference	jjohnson
+Filter and Sort	query_tabular	jjohnson
+Join, Subtract and Group	datamash_ops	iuc
+Join, Subtract and Group	datamash_reverse	iuc
+Join, Subtract and Group	datamash_transpose	iuc
+Proteomics	maldi_quant_peak_detection	galaxyp
+Proteomics	cardinal_mz_images	galaxyp
+Proteomics	cardinal_filtering	galaxyp
+Proteomics	maldi_quant_preprocessing	galaxyp
+Proteomics	cardinal_spectra_plots	galaxyp
+Proteomics	cardinal_segmentations	galaxyp
+Proteomics	cardinal_quality_report	galaxyp
+Proteomics	cardinal_preprocessing	galaxyp
+Proteomics	cardinal_data_exporter	galaxyp
+Proteomics	cardinal_combine	galaxyp
+Proteomics	cardinal_classification	galaxyp
+Proteomics	percolator	galaxyp
+Proteomics	lfq_protein_quant	galaxyp
+Proteomics	quantp	galaxyp
+Proteomics	msi_preprocessing	galaxyp
+Proteomics	peptideshaker	galaxyp
+Proteomics	msi_spectra_plot	galaxyp
+Proteomics	msi_qualitycontrol	galaxyp
+Proteomics	msi_filtering	galaxyp
+Proteomics	msi_ion_images	galaxyp
+Proteomics	mass_spectrometry_imaging_segmentations	galaxyp
+Proteomics	msi_combine	galaxyp
+Proteomics	reactome_pathwaymatcher	galaxyp
+Proteomics	msi_classification	galaxyp
+Proteomics	msgfplus	galaxyp
+Proteomics	eggnog_mapper	galaxyp
+Proteomics	protease_prediction	bgruening
+Proteomics	sqlite_to_tabular	iuc
+Proteomics	protein_properties	bgruening
+Proteomics	filter_tabular	iuc
+Proteomics	query_tabular	iuc
+Proteomics	proteomics_moff	galaxyp
+Proteomics	openms_idposteriorerrorprobability	galaxyp
+Proteomics	openms_targetedfileconverter	galaxyp
+Proteomics	openms_idscoreswitcher	galaxyp
+Proteomics	openms_ticcalculator	galaxyp
+Proteomics	openms_spectrafilternlargest	galaxyp
+Proteomics	openms_spectrafilterwindowmower	galaxyp
+Proteomics	openms_qcimporter	galaxyp
+Proteomics	openms_openswathrewritetofeaturexml	galaxyp
+Proteomics	openms_rtmodel	galaxyp
+Proteomics	openms_ptmodel	galaxyp
+Proteomics	openms_proteinresolver	galaxyp
+Proteomics	openms_proteininference	galaxyp
+Proteomics	openms_xmlvalidator	galaxyp
+Proteomics	openms_spectrafilterparentpeakmower	galaxyp
+Proteomics	openms_peakpickerwavelet	galaxyp
+Proteomics	openms_spectrafilterthresholdmower	galaxyp
+Proteomics	openms_openswathmzmlfilecacher	galaxyp
+Proteomics	openms_precursormasscorrector	galaxyp
+Proteomics	openms_spectrastsearchadapter	galaxyp
+Proteomics	openms_qcshrinker	galaxyp
+Proteomics	openms_noisefiltersgolay	galaxyp
+Proteomics	openms_openswathassaygenerator	galaxyp
+Proteomics	openms_rtpredict	galaxyp
+Proteomics	openms_mztabexporter	galaxyp
+Proteomics	openms_speclibsearcher	galaxyp
+Proteomics	openms_multiplexresolver	galaxyp
+Proteomics	openms_xtandemadapter	galaxyp
+Proteomics	openms_qccalculator	galaxyp
+Proteomics	openms_spectrafiltersqrtmower	galaxyp
+Proteomics	openms_metaprosip	galaxyp
+Proteomics	openms_semanticvalidator	galaxyp
+Proteomics	openms_masscalculator	galaxyp
+Proteomics	openms_openpepxl	galaxyp
+Proteomics	openms_mapstatistics	galaxyp
+Proteomics	openms_openswathrtnormalizer	galaxyp
+Proteomics	openms_maprttransformer	galaxyp
+Proteomics	openms_siriusadapter	galaxyp
+Proteomics	openms_spectrafilterscaler	galaxyp
+Proteomics	openms_luciphoradapter	galaxyp
+Proteomics	openms_mapalignerspectrum	galaxyp
+Proteomics	openms_lowmempeakpickerhires	galaxyp
+Proteomics	openms_openswathfilesplitter	galaxyp
+Proteomics	openms_isobaricanalyzer	galaxyp
+Proteomics	openms_transformationevaluation	galaxyp
+Proteomics	openms_internalcalibration	galaxyp
+Proteomics	openms_ptpredict	galaxyp
+Proteomics	openms_mrmpairfinder	galaxyp
+Proteomics	openms_inspectadapter	galaxyp
+Proteomics	openms_openswathconfidencescoring	galaxyp
+Proteomics	openms_inclusionexclusionlistcreator	galaxyp
+Proteomics	openms_openswathworkflow	galaxyp
+Proteomics	openms_idsplitter	galaxyp
+Proteomics	openms_mapaligneridentification	galaxyp
+Proteomics	openms_phosphoscoring	galaxyp
+Proteomics	openms_mascotadapteronline	galaxyp
+Proteomics	openms_mzmlsplitter	galaxyp
+Proteomics	openms_idmerger	galaxyp
+Proteomics	openms_idmassaccuracy	galaxyp
+Proteomics	openms_idmapper	galaxyp
+Proteomics	openms_lowmempeakpickerhires_randomaccess	galaxyp
+Proteomics	openms_idfileconverter	galaxyp
+Proteomics	openms_noisefiltergaussian	galaxyp
+Proteomics	openms_idextractor	galaxyp
+Proteomics	openms_mascotadapter	galaxyp
+Proteomics	openms_iddecoyprobability	galaxyp
+Proteomics	openms_peakpickeriterative	galaxyp
+Proteomics	openms_openswathdiaprescoring	galaxyp
+Proteomics	openms_idconflictresolver	galaxyp
+Proteomics	openms_precursorionselector	galaxyp
+Proteomics	openms_fuzzydiff	galaxyp
+Proteomics	openms_rnpxlsearch	galaxyp
+Proteomics	openms_filefilter	galaxyp
+Proteomics	openms_seedlistgenerator	galaxyp
+Proteomics	openms_fileconverter	galaxyp
+Proteomics	openms_mapnormalizer	galaxyp
+Proteomics	openms_peptideindexer	galaxyp
+Proteomics	openms_featurelinkerunlabeled	galaxyp
+Proteomics	openms_rnpxl	galaxyp
+Proteomics	openms_featurelinkerunlabeledqt	galaxyp
+Proteomics	openms_openswathdecoygenerator	galaxyp
+Proteomics	openms_featurelinkerunlabeledkd	galaxyp
+Proteomics	openms_spectrafilterbernnorm	galaxyp
+Proteomics	openms_featurelinkerlabeled	galaxyp
+Proteomics	openms_mrmmapper	galaxyp
+Proteomics	openms_featurefindersuperhirn	galaxyp
+Proteomics	openms_spectrafilternormalizer	galaxyp
+Proteomics	openms_mrmtransitiongrouppicker	galaxyp
+Proteomics	openms_featurefinderisotopewavelet	galaxyp
+Proteomics	openms_highresprecursormasscorrector	galaxyp
+Proteomics	openms_featurefinderidentification	galaxyp
+Proteomics	openms_fileinfo	galaxyp
+Proteomics	openms_falsediscoveryrate	galaxyp
+Proteomics	openms_svmtheoreticalspectrumgeneratortrainer	galaxyp
+Proteomics	openms_msgfplusadapter	galaxyp
+Proteomics	openms_digestor	galaxyp
+Proteomics	openms_metaboliteadductdecharger	galaxyp
+Proteomics	openms_decoydatabase	galaxyp
+Proteomics	openms_xfdr	galaxyp
+Proteomics	openms_decharger	galaxyp
+Proteomics	openms_psmfeatureextractor	galaxyp
+Proteomics	openms_openpepxllf	galaxyp
+Proteomics	openms_databasefilter	galaxyp
+Proteomics	openms_digestormotif	galaxyp
+Proteomics	openms_speclibcreator	galaxyp
+Proteomics	openms_cvinspector	galaxyp
+Proteomics	openms_rnpxlxicfilter	galaxyp
+Proteomics	openms_rtevaluation	galaxyp
+Proteomics	openms_featurefindermetabo	galaxyp
+Proteomics	openms_mapalignerposeclustering	galaxyp
+Proteomics	openms_cometadapter	galaxyp
+Proteomics	openms_proteinquantifier	galaxyp
+Proteomics	openms_demeanderize	galaxyp
+Proteomics	openms_idripper	galaxyp
+Proteomics	openms_tofcalibration	galaxyp
+Proteomics	openms_peakpickerhires	galaxyp
+Proteomics	openms_dtaextractor	galaxyp
+Proteomics	openms_qcmerger	galaxyp
+Proteomics	openms_labeledeval	galaxyp
+Proteomics	openms_qcextractor	galaxyp
+Proteomics	openms_idfilter	galaxyp
+Proteomics	openms_mssimulator	galaxyp
+Proteomics	openms_erpairfinder	galaxyp
+Proteomics	openms_featurefindermultiplex	galaxyp
+Proteomics	openms_filemerger	galaxyp
+Proteomics	openms_openswathfeaturexmltotsv	galaxyp
+Proteomics	openms_featurefindermrm	galaxyp
+Proteomics	openms_percolatoradapter	galaxyp
+Proteomics	openms_consensusid	galaxyp
+Proteomics	openms_consensusmapnormalizer	galaxyp
+Proteomics	openms_fidoadapter	galaxyp
+Proteomics	openms_compnovo	galaxyp
+Proteomics	openms_spectrafiltermarkermower	galaxyp
+Proteomics	openms_baselinefilter	galaxyp
+Proteomics	openms_additiveseries	galaxyp
+Proteomics	openms_externalcalibration	galaxyp
+Proteomics	openms_accuratemasssearch	galaxyp
+Proteomics	openms_textexporter	galaxyp
+Proteomics	openms_simplesearchengine	galaxyp
+Proteomics	openms_openswathanalyzer	galaxyp
+Proteomics	openms_compnovocid	galaxyp
+Proteomics	openms_qcexporter	galaxyp
+Proteomics	openms_spectramerger	galaxyp
+Proteomics	openms_sequencecoveragecalculator	galaxyp
+Proteomics	openms_metabolitespectralmatcher	galaxyp
+Proteomics	openms_ffeval	galaxyp
+Proteomics	openms_featurefindercentroided	galaxyp
+Proteomics	openms_eicextractor	galaxyp
+Proteomics	openms_qcembedder	galaxyp
+Proteomics	flashlfq	galaxyp
+Proteomics	idpqonvert	galaxyp
+Proteomics	idpquery	galaxyp
+Proteomics	idpassemble	galaxyp
+Proteomics	myrimatch	galaxyp
+Proteomics	query_tabular	jjohnson
+Proteomics	openms_masstraceextractor	galaxyp
+Proteomics	openms_idrtcalibration	galaxyp
+Proteomics	openms_topperc	galaxyp
+Proteomics	openms_openswathchromatogramextractor	galaxyp
+Proteomics	hardklor	galaxyp
+Proteomics	decoyfasta	galaxyp
+Proteomics	morpheus	galaxyp
+Statistics	mine	devteam
+Statistics	plot_from_lda	devteam
+Statistics	lda_analysis	devteam
+Statistics	generate_pc_lda_matrix	devteam
+Statistics	count_gff_features	devteam
+Statistics	correlation	devteam
+Statistics	best_regression_subsets	devteam
+Statistics	principal_component_analysis	devteam
+Statistics	kernel_principal_component_analysis	devteam
+Statistics	kernel_canonical_correlation_analysis	devteam
+Statistics	canonical_correlation_analysis	devteam
+Statistics	dwt_var_perfeature	devteam
+Statistics	t_test_two_samples	devteam
+Statistics	sklearn_feature_selection	bgruening
+Statistics	nn_classifier	bgruening
+Statistics	svm_classifier	bgruening
+Statistics	sklearn_searchcv	bgruening
+Statistics	sklearn_svm_classifier	bgruening
+Statistics	sklearn_build_pipeline	bgruening
+Statistics	sklearn_nn_classifier	bgruening
+Statistics	sklearn_model_validation	bgruening
+Statistics	sklearn_regression_metrics	bgruening
+Statistics	anova	lecorguille
+Statistics	multivariate	ethevenot
+Statistics	univariate	ethevenot
+Statistics	sklearn_generalized_linear	bgruening
+Statistics	sklearn_sample_generator	bgruening
+Statistics	sklearn_numeric_clustering	bgruening
+Statistics	sklearn_clf_metrics	bgruening
+Statistics	sklearn_ensemble	bgruening
+Statistics	sklearn_data_preprocess	bgruening
+Statistics	sklearn_pairwise_metrics	bgruening
+Statistics	scipy_sparse	bgruening
+Statistics	sklearn_discriminant_classifier	bgruening
+Statistics	iwtomics_plotwithscale	iuc
+Statistics	iwtomics_testandplot	iuc
+Statistics	iwtomics_loadandplot	iuc
+Statistics	seq_composition	peterjc
+Statistics	biosigner	ethevenot
+Statistics	transformation	ethevenot
+Statistics	heatmap	ethevenot
+Statistics	numeric_clustering	bgruening
+Graph/Display Data	ucsc_custom_track	devteam
+Graph/Display Data	jbrowse	iuc
+Graph/Display Data	scatterplot	devteam
+Graph/Display Data	histogram	devteam
+Graph/Display Data	gmaj	devteam
+Graph/Display Data	xy_plot	devteam
+Graph/Display Data	volcanoplot	iuc
+Graph/Display Data	newick_utils	iuc
+Graph/Display Data	plotly_ml_performance_plots	bgruening
+Graph/Display Data	nanoplot	iuc
+Graph/Display Data	plotly_parallel_coordinates_plot	bgruening
+Graph/Display Data	bandage	iuc
+Graph/Display Data	intervene	iuc
+Graph/Display Data	pygenometracks	iuc
+Graph/Display Data	ggplot2_histogram	iuc
+Graph/Display Data	ggplot2_point	iuc
+Graph/Display Data	ggplot2_heatmap2	iuc
+Graph/Display Data	ggplot2_violin	iuc
+Graph/Display Data	ggplot2_heatmap	iuc
+Graph/Display Data	ggplot2_pca	iuc
+Graph/Display Data	fasta_nucleotide_color_plot	iuc
+Graph/Display Data	graphlan	iuc
+Graph/Display Data	graphlan_annotate	iuc
+Graph/Display Data	export2graphlan	iuc
+Graph/Display Data	circos	iuc
+Graph/Display Data	tsne	iuc
+Graph/Display Data	krona_text	saskia-hiltemann
+Graph/Display Data	venn_list	peterjc
+Graph/Display Data	mummer	peterjc
+Graph/Display Data	karyotype_plot	guru-ananda
 Get Data	retrieve_ensembl_bed	galaxyp
 Get Data	ms_wiff_loader	galaxyp
 Text Manipulation	query_tabular	iuc
-Text Manipulation	replace_chromosome_names	earlhaminst
 Text Manipulation	sqlite_to_tabular	iuc
 Text Manipulation	filter_tabular	iuc
-Text Manipulation	reshape2_melt	iuc
-Text Manipulation	reshape2_cast	iuc
 Text Manipulation	datamash_ops	iuc
 Text Manipulation	datamash_reverse	iuc
 Text Manipulation	datamash_transpose	iuc
 Text Manipulation	regex_find_replace	galaxyp
 Text Manipulation	concatenate_multiple_datasets	mvdbeek
-Text Manipulation	regex_replace	kellrott
-Text Manipulation	column_maker	devteam
 Text Manipulation	regex_find_replace	jjohnson
 Text Manipulation	find_in_reference	jjohnson
-Filter and Sort	filter_by_fasta_ids	galaxyp
 Filter and Sort	filter_by_substring_match	alan-blakely
 Join, Subtract and Group	column_join	jjohnson
 Convert Formats	gffcompare_to_bed	galaxyp
@@ -467,7 +816,6 @@ Computational Chemistry	commonality_finder	jfb
 Computational Chemistry	promap	jfb
 Computational Chemistry	negative_motif_finder_7_7	jfb
 Computational Chemistry	kinamine7_7	jfb
-Collection Operations	collapse_collections	nml
 Epigenetics	methylkit	rnateam
 MetaProteomics	metagene_annotator	galaxyp
 MetaProteomics	sixgill	galaxyp

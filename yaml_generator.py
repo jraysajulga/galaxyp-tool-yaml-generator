@@ -2,15 +2,17 @@ import urllib2
 import ssl
 import json
 
-def create_yaml_and_tabular(filename, url):
+def create_yaml_and_tabular(filename, urls):
     ctx = ssl.create_default_context()
     ctx.check_hostname = False
     ctx.verify_mode = ssl.CERT_NONE
 
-    response = urllib2.urlopen(url,
+    data = []
+    for url in urls:
+        response = urllib2.urlopen(url,
                     context=ctx)
-
-    data = json.loads(response.read())
+        #print(len(json.loads(response.read())))
+        data = data + json.loads(response.read())
 
     yaml_file = open(filename + ".yaml", "w")
 
@@ -51,4 +53,4 @@ def create_yaml_and_tabular(filename, url):
     sheet_file.close()
 
 #create_yaml_and_tabular("tools_galaxyp", "https://galaxyp.msi.umn.edu/api/tools?in_panel=true")
-create_yaml_and_tabular("proteomicsEU_tools_galaxyp", "https://proteomics.usegalaxy.eu/api/tools?in_panel=true")
+create_yaml_and_tabular("tools_galaxyp", ["https://proteomics.usegalaxy.eu/api/tools?in_panel=true", "https://galaxyp.msi.umn.edu/api/tools?in_panel=true"])

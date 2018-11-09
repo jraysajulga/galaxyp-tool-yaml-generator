@@ -4,6 +4,1426 @@ install_resolver_dependencies: true
 install_tool_dependencies: false
 
 tools:
+  - name: sra_tools
+		owner: iuc
+		tool_panel_section_label: Get Data
+
+  - name: uniprot_rest_interface
+		owner: bgruening
+		tool_panel_section_label: Get Data
+
+  - name: ensembl_get_sequences
+		owner: earlhaminst
+		tool_panel_section_label: Get Data
+
+  - name: ensembl_get_genetree
+		owner: earlhaminst
+		tool_panel_section_label: Get Data
+
+  - name: ensembl_get_feature_info
+		owner: earlhaminst
+		tool_panel_section_label: Get Data
+
+  - name: ncbi_eutils_ecitmatch
+		owner: iuc
+		tool_panel_section_label: Get Data
+
+  - name: ncbi_eutils_elink
+		owner: iuc
+		tool_panel_section_label: Get Data
+
+  - name: ncbi_eutils_egquery
+		owner: iuc
+		tool_panel_section_label: Get Data
+
+  - name: ncbi_eutils_efetch
+		owner: iuc
+		tool_panel_section_label: Get Data
+
+  - name: ncbi_eutils_einfo
+		owner: iuc
+		tool_panel_section_label: Get Data
+
+  - name: ncbi_eutils_epost
+		owner: iuc
+		tool_panel_section_label: Get Data
+
+  - name: ncbi_eutils_esummary
+		owner: iuc
+		tool_panel_section_label: Get Data
+
+  - name: ncbi_eutils_esearch
+		owner: iuc
+		tool_panel_section_label: Get Data
+
+  - name: enasearch_search_data
+		owner: iuc
+		tool_panel_section_label: Get Data
+
+  - name: enasearch_retrieve_data
+		owner: iuc
+		tool_panel_section_label: Get Data
+
+  - name: enasearch_retrieve_taxons
+		owner: iuc
+		tool_panel_section_label: Get Data
+
+  - name: enasearch_retrieve_analysis_report
+		owner: iuc
+		tool_panel_section_label: Get Data
+
+  - name: enasearch_retrieve_run_report
+		owner: iuc
+		tool_panel_section_label: Get Data
+
+  - name: ebi_search_rest_results
+		owner: iuc
+		tool_panel_section_label: Get Data
+
+  - name: unipept
+		owner: galaxyp
+		tool_panel_section_label: Get Data
+
+  - name: dbbuilder
+		owner: galaxyp
+		tool_panel_section_label: Get Data
+
+  - name: uniprotxml_downloader
+		owner: galaxyp
+		tool_panel_section_label: Get Data
+
+  - name: dorina
+		owner: rnateam
+		tool_panel_section_label: Get Data
+
+  - name: ebi_metagenomics_run_downloader
+		owner: iuc
+		tool_panel_section_label: Get Data
+
+  - name: ega_download_streamer
+		owner: yhoogstrate
+		tool_panel_section_label: Get Data
+
+  - name: tabular_to_fasta
+		owner: devteam
+		tool_panel_section_label: Convert Formats
+
+  - name: fasta_to_tabular
+		owner: devteam
+		tool_panel_section_label: Convert Formats
+
+  - name: tabular_to_fastq
+		owner: devteam
+		tool_panel_section_label: Convert Formats
+
+  - name: fastqtofasta
+		owner: devteam
+		tool_panel_section_label: Convert Formats
+
+  - name: fastq_to_fasta
+		owner: devteam
+		tool_panel_section_label: FASTA/FASTQ manipulation
+
+  - name: fastq_to_tabular
+		owner: devteam
+		tool_panel_section_label: Convert Formats
+
+  - name: graphicsmagick_image_montage
+		owner: bgruening
+		tool_panel_section_label: Convert Formats
+
+  - name: graphicsmagick_image_convert
+		owner: bgruening
+		tool_panel_section_label: Convert Formats
+
+  - name: thermo_raw_file_converter
+		owner: galaxyp
+		tool_panel_section_label: Convert Formats
+
+  - name: gtftobed12
+		owner: iuc
+		tool_panel_section_label: Convert Formats
+
+  - name: resize_coordinate_window
+		owner: iuc
+		tool_panel_section_label: Convert Formats
+
+  - name: ucsc_twobittofa
+		owner: iuc
+		tool_panel_section_label: Convert Formats
+
+  - name: idpquery
+		owner: galaxyp
+		tool_panel_section_label: Convert Formats
+
+  - name: gffread
+		owner: devteam
+		tool_panel_section_label: Convert Formats
+
+  - name: bam_to_scidx
+		owner: iuc
+		tool_panel_section_label: Convert Formats
+
+  - name: msconvert_nix
+		owner: galaxyp
+		tool_panel_section_label: Convert Formats
+
+  - name: map_peptides_to_bed
+		owner: galaxyp
+		tool_panel_section_label: Convert Formats
+
+  - name: msconvert
+		owner: galaxyp
+		tool_panel_section_label: Convert Formats
+
+  - name: idconvert
+		owner: galaxyp
+		tool_panel_section_label: Convert Formats
+
+  - name: bigwig_to_bedgraph
+		owner: bgruening
+		tool_panel_section_label: Convert Formats
+
+  - name: collapse_collections
+		owner: nml
+		tool_panel_section_label: Collection Operations
+
+  - name: collection_column_join
+		owner: iuc
+		tool_panel_section_label: Collection Operations
+
+  - name: dna_filtering
+		owner: devteam
+		tool_panel_section_label: Text Manipulation
+
+  - name: column_maker
+		owner: devteam
+		tool_panel_section_label: Text Manipulation
+
+  - name: replace_chromosome_names
+		owner: earlhaminst
+		tool_panel_section_label: Text Manipulation
+
+  - name: join_files_on_column_fuzzy
+		owner: bgruening
+		tool_panel_section_label: Text Manipulation
+
+  - name: jq
+		owner: iuc
+		tool_panel_section_label: Text Manipulation
+
+  - name: text_processing
+		owner: bgruening
+		tool_panel_section_label: Text Manipulation
+
+  - name: reshape2_cast
+		owner: iuc
+		tool_panel_section_label: Text Manipulation
+
+  - name: reshape2_melt
+		owner: iuc
+		tool_panel_section_label: Text Manipulation
+
+  - name: basecoverage
+		owner: devteam
+		tool_panel_section_label: Operate on Genomic Intervals
+
+  - name: subtract
+		owner: devteam
+		tool_panel_section_label: Join, Subtract and Group
+
+  - name: complement
+		owner: devteam
+		tool_panel_section_label: Operate on Genomic Intervals
+
+  - name: cluster
+		owner: devteam
+		tool_panel_section_label: Operate on Genomic Intervals
+
+  - name: prinseq
+		owner: iuc
+		tool_panel_section_label: Text Manipulation
+
+  - name: gff3_rebase
+		owner: iuc
+		tool_panel_section_label: Text Manipulation
+
+  - name: column_remove_by_header
+		owner: iuc
+		tool_panel_section_label: Text Manipulation
+
+  - name: column_order_header_sort
+		owner: iuc
+		tool_panel_section_label: Text Manipulation
+
+  - name: replace_column_by_key_value_file
+		owner: bgruening
+		tool_panel_section_label: Text Manipulation
+
+  - name: add_input_name_as_column
+		owner: mvdbeek
+		tool_panel_section_label: Text Manipulation
+
+  - name: split_file_on_column
+		owner: bgruening
+		tool_panel_section_label: Text Manipulation
+
+  - name: coverage
+		owner: devteam
+		tool_panel_section_label: Text Manipulation
+
+  - name: regex_replace
+		owner: kellrott
+		tool_panel_section_label: Text Manipulation
+
+  - name: tables_arithmetic_operations
+		owner: devteam
+		tool_panel_section_label: Text Manipulation
+
+  - name: merge
+		owner: devteam
+		tool_panel_section_label: Text Manipulation
+
+  - name: intersect
+		owner: devteam
+		tool_panel_section_label: Text Manipulation
+
+  - name: flanking_features
+		owner: devteam
+		tool_panel_section_label: Text Manipulation
+
+  - name: join
+		owner: devteam
+		tool_panel_section_label: Text Manipulation
+
+  - name: get_flanks
+		owner: devteam
+		tool_panel_section_label: Text Manipulation
+
+  - name: subtract_query
+		owner: devteam
+		tool_panel_section_label: Text Manipulation
+
+  - name: merge_cols
+		owner: devteam
+		tool_panel_section_label: Text Manipulation
+
+  - name: unique
+		owner: bgruening
+		tool_panel_section_label: Text Manipulation
+
+  - name: add_value
+		owner: devteam
+		tool_panel_section_label: Text Manipulation
+
+  - name: filter_by_fasta_ids
+		owner: galaxyp
+		tool_panel_section_label: Filter and Sort
+
+  - name: gffcompare
+		owner: iuc
+		tool_panel_section_label: Filter and Sort
+
+  - name: xpath
+		owner: iuc
+		tool_panel_section_label: Filter and Sort
+
+  - name: sample_seqs
+		owner: peterjc
+		tool_panel_section_label: Filter and Sort
+
+  - name: seq_filter_by_id
+		owner: peterjc
+		tool_panel_section_label: Filter and Sort
+
+  - name: sqlite_to_tabular
+		owner: jjohnson
+		tool_panel_section_label: Filter and Sort
+
+  - name: column_arrange_by_header
+		owner: bgruening
+		tool_panel_section_label: Filter and Sort
+
+  - name: find_in_reference
+		owner: jjohnson
+		tool_panel_section_label: Filter and Sort
+
+  - name: query_tabular
+		owner: jjohnson
+		tool_panel_section_label: Filter and Sort
+
+  - name: datamash_ops
+		owner: iuc
+		tool_panel_section_label: Join, Subtract and Group
+
+  - name: datamash_reverse
+		owner: iuc
+		tool_panel_section_label: Join, Subtract and Group
+
+  - name: datamash_transpose
+		owner: iuc
+		tool_panel_section_label: Join, Subtract and Group
+
+  - name: maldi_quant_peak_detection
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: cardinal_mz_images
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: cardinal_filtering
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: maldi_quant_preprocessing
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: cardinal_spectra_plots
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: cardinal_segmentations
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: cardinal_quality_report
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: cardinal_preprocessing
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: cardinal_data_exporter
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: cardinal_combine
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: cardinal_classification
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: percolator
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: lfq_protein_quant
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: quantp
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: msi_preprocessing
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: peptideshaker
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: msi_spectra_plot
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: msi_qualitycontrol
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: msi_filtering
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: msi_ion_images
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: mass_spectrometry_imaging_segmentations
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: msi_combine
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: reactome_pathwaymatcher
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: msi_classification
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: msgfplus
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: eggnog_mapper
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: protease_prediction
+		owner: bgruening
+		tool_panel_section_label: Proteomics
+
+  - name: sqlite_to_tabular
+		owner: iuc
+		tool_panel_section_label: Proteomics
+
+  - name: protein_properties
+		owner: bgruening
+		tool_panel_section_label: Proteomics
+
+  - name: filter_tabular
+		owner: iuc
+		tool_panel_section_label: Proteomics
+
+  - name: query_tabular
+		owner: iuc
+		tool_panel_section_label: Proteomics
+
+  - name: proteomics_moff
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_idposteriorerrorprobability
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_targetedfileconverter
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_idscoreswitcher
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_ticcalculator
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_spectrafilternlargest
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_spectrafilterwindowmower
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_qcimporter
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_openswathrewritetofeaturexml
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_rtmodel
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_ptmodel
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_proteinresolver
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_proteininference
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_xmlvalidator
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_spectrafilterparentpeakmower
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_peakpickerwavelet
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_spectrafilterthresholdmower
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_openswathmzmlfilecacher
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_precursormasscorrector
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_spectrastsearchadapter
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_qcshrinker
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_noisefiltersgolay
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_openswathassaygenerator
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_rtpredict
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_mztabexporter
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_speclibsearcher
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_multiplexresolver
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_xtandemadapter
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_qccalculator
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_spectrafiltersqrtmower
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_metaprosip
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_semanticvalidator
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_masscalculator
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_openpepxl
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_mapstatistics
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_openswathrtnormalizer
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_maprttransformer
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_siriusadapter
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_spectrafilterscaler
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_luciphoradapter
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_mapalignerspectrum
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_lowmempeakpickerhires
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_openswathfilesplitter
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_isobaricanalyzer
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_transformationevaluation
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_internalcalibration
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_ptpredict
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_mrmpairfinder
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_inspectadapter
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_openswathconfidencescoring
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_inclusionexclusionlistcreator
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_openswathworkflow
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_idsplitter
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_mapaligneridentification
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_phosphoscoring
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_mascotadapteronline
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_mzmlsplitter
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_idmerger
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_idmassaccuracy
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_idmapper
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_lowmempeakpickerhires_randomaccess
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_idfileconverter
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_noisefiltergaussian
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_idextractor
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_mascotadapter
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_iddecoyprobability
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_peakpickeriterative
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_openswathdiaprescoring
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_idconflictresolver
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_precursorionselector
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_fuzzydiff
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_rnpxlsearch
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_filefilter
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_seedlistgenerator
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_fileconverter
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_mapnormalizer
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_peptideindexer
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_featurelinkerunlabeled
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_rnpxl
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_featurelinkerunlabeledqt
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_openswathdecoygenerator
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_featurelinkerunlabeledkd
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_spectrafilterbernnorm
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_featurelinkerlabeled
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_mrmmapper
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_featurefindersuperhirn
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_spectrafilternormalizer
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_mrmtransitiongrouppicker
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_featurefinderisotopewavelet
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_highresprecursormasscorrector
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_featurefinderidentification
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_fileinfo
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_falsediscoveryrate
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_svmtheoreticalspectrumgeneratortrainer
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_msgfplusadapter
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_digestor
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_metaboliteadductdecharger
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_decoydatabase
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_xfdr
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_decharger
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_psmfeatureextractor
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_openpepxllf
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_databasefilter
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_digestormotif
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_speclibcreator
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_cvinspector
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_rnpxlxicfilter
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_rtevaluation
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_featurefindermetabo
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_mapalignerposeclustering
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_cometadapter
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_proteinquantifier
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_demeanderize
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_idripper
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_tofcalibration
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_peakpickerhires
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_dtaextractor
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_qcmerger
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_labeledeval
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_qcextractor
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_idfilter
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_mssimulator
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_erpairfinder
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_featurefindermultiplex
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_filemerger
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_openswathfeaturexmltotsv
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_featurefindermrm
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_percolatoradapter
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_consensusid
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_consensusmapnormalizer
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_fidoadapter
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_compnovo
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_spectrafiltermarkermower
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_baselinefilter
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_additiveseries
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_externalcalibration
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_accuratemasssearch
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_textexporter
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_simplesearchengine
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_openswathanalyzer
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_compnovocid
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_qcexporter
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_spectramerger
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_sequencecoveragecalculator
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_metabolitespectralmatcher
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_ffeval
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_featurefindercentroided
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_eicextractor
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_qcembedder
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: flashlfq
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: idpqonvert
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: idpquery
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: idpassemble
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: myrimatch
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: query_tabular
+		owner: jjohnson
+		tool_panel_section_label: Proteomics
+
+  - name: openms_masstraceextractor
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_idrtcalibration
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_topperc
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: openms_openswathchromatogramextractor
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: hardklor
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: decoyfasta
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: morpheus
+		owner: galaxyp
+		tool_panel_section_label: Proteomics
+
+  - name: mine
+		owner: devteam
+		tool_panel_section_label: Statistics
+
+  - name: plot_from_lda
+		owner: devteam
+		tool_panel_section_label: Statistics
+
+  - name: lda_analysis
+		owner: devteam
+		tool_panel_section_label: Statistics
+
+  - name: generate_pc_lda_matrix
+		owner: devteam
+		tool_panel_section_label: Statistics
+
+  - name: count_gff_features
+		owner: devteam
+		tool_panel_section_label: Statistics
+
+  - name: correlation
+		owner: devteam
+		tool_panel_section_label: Statistics
+
+  - name: best_regression_subsets
+		owner: devteam
+		tool_panel_section_label: Statistics
+
+  - name: principal_component_analysis
+		owner: devteam
+		tool_panel_section_label: Statistics
+
+  - name: kernel_principal_component_analysis
+		owner: devteam
+		tool_panel_section_label: Statistics
+
+  - name: kernel_canonical_correlation_analysis
+		owner: devteam
+		tool_panel_section_label: Statistics
+
+  - name: canonical_correlation_analysis
+		owner: devteam
+		tool_panel_section_label: Statistics
+
+  - name: dwt_var_perfeature
+		owner: devteam
+		tool_panel_section_label: Statistics
+
+  - name: t_test_two_samples
+		owner: devteam
+		tool_panel_section_label: Statistics
+
+  - name: sklearn_feature_selection
+		owner: bgruening
+		tool_panel_section_label: Statistics
+
+  - name: nn_classifier
+		owner: bgruening
+		tool_panel_section_label: Statistics
+
+  - name: svm_classifier
+		owner: bgruening
+		tool_panel_section_label: Statistics
+
+  - name: sklearn_searchcv
+		owner: bgruening
+		tool_panel_section_label: Statistics
+
+  - name: sklearn_svm_classifier
+		owner: bgruening
+		tool_panel_section_label: Statistics
+
+  - name: sklearn_build_pipeline
+		owner: bgruening
+		tool_panel_section_label: Statistics
+
+  - name: sklearn_nn_classifier
+		owner: bgruening
+		tool_panel_section_label: Statistics
+
+  - name: sklearn_model_validation
+		owner: bgruening
+		tool_panel_section_label: Statistics
+
+  - name: sklearn_regression_metrics
+		owner: bgruening
+		tool_panel_section_label: Statistics
+
+  - name: anova
+		owner: lecorguille
+		tool_panel_section_label: Statistics
+
+  - name: multivariate
+		owner: ethevenot
+		tool_panel_section_label: Statistics
+
+  - name: univariate
+		owner: ethevenot
+		tool_panel_section_label: Statistics
+
+  - name: sklearn_generalized_linear
+		owner: bgruening
+		tool_panel_section_label: Statistics
+
+  - name: sklearn_sample_generator
+		owner: bgruening
+		tool_panel_section_label: Statistics
+
+  - name: sklearn_numeric_clustering
+		owner: bgruening
+		tool_panel_section_label: Statistics
+
+  - name: sklearn_clf_metrics
+		owner: bgruening
+		tool_panel_section_label: Statistics
+
+  - name: sklearn_ensemble
+		owner: bgruening
+		tool_panel_section_label: Statistics
+
+  - name: sklearn_data_preprocess
+		owner: bgruening
+		tool_panel_section_label: Statistics
+
+  - name: sklearn_pairwise_metrics
+		owner: bgruening
+		tool_panel_section_label: Statistics
+
+  - name: scipy_sparse
+		owner: bgruening
+		tool_panel_section_label: Statistics
+
+  - name: sklearn_discriminant_classifier
+		owner: bgruening
+		tool_panel_section_label: Statistics
+
+  - name: iwtomics_plotwithscale
+		owner: iuc
+		tool_panel_section_label: Statistics
+
+  - name: iwtomics_testandplot
+		owner: iuc
+		tool_panel_section_label: Statistics
+
+  - name: iwtomics_loadandplot
+		owner: iuc
+		tool_panel_section_label: Statistics
+
+  - name: seq_composition
+		owner: peterjc
+		tool_panel_section_label: Statistics
+
+  - name: biosigner
+		owner: ethevenot
+		tool_panel_section_label: Statistics
+
+  - name: transformation
+		owner: ethevenot
+		tool_panel_section_label: Statistics
+
+  - name: heatmap
+		owner: ethevenot
+		tool_panel_section_label: Statistics
+
+  - name: numeric_clustering
+		owner: bgruening
+		tool_panel_section_label: Statistics
+
+  - name: ucsc_custom_track
+		owner: devteam
+		tool_panel_section_label: Graph/Display Data
+
+  - name: jbrowse
+		owner: iuc
+		tool_panel_section_label: Graph/Display Data
+
+  - name: scatterplot
+		owner: devteam
+		tool_panel_section_label: Graph/Display Data
+
+  - name: histogram
+		owner: devteam
+		tool_panel_section_label: Graph/Display Data
+
+  - name: gmaj
+		owner: devteam
+		tool_panel_section_label: Graph/Display Data
+
+  - name: xy_plot
+		owner: devteam
+		tool_panel_section_label: Graph/Display Data
+
+  - name: volcanoplot
+		owner: iuc
+		tool_panel_section_label: Graph/Display Data
+
+  - name: newick_utils
+		owner: iuc
+		tool_panel_section_label: Graph/Display Data
+
+  - name: plotly_ml_performance_plots
+		owner: bgruening
+		tool_panel_section_label: Graph/Display Data
+
+  - name: nanoplot
+		owner: iuc
+		tool_panel_section_label: Graph/Display Data
+
+  - name: plotly_parallel_coordinates_plot
+		owner: bgruening
+		tool_panel_section_label: Graph/Display Data
+
+  - name: bandage
+		owner: iuc
+		tool_panel_section_label: Graph/Display Data
+
+  - name: intervene
+		owner: iuc
+		tool_panel_section_label: Graph/Display Data
+
+  - name: pygenometracks
+		owner: iuc
+		tool_panel_section_label: Graph/Display Data
+
+  - name: ggplot2_histogram
+		owner: iuc
+		tool_panel_section_label: Graph/Display Data
+
+  - name: ggplot2_point
+		owner: iuc
+		tool_panel_section_label: Graph/Display Data
+
+  - name: ggplot2_heatmap2
+		owner: iuc
+		tool_panel_section_label: Graph/Display Data
+
+  - name: ggplot2_violin
+		owner: iuc
+		tool_panel_section_label: Graph/Display Data
+
+  - name: ggplot2_heatmap
+		owner: iuc
+		tool_panel_section_label: Graph/Display Data
+
+  - name: ggplot2_pca
+		owner: iuc
+		tool_panel_section_label: Graph/Display Data
+
+  - name: fasta_nucleotide_color_plot
+		owner: iuc
+		tool_panel_section_label: Graph/Display Data
+
+  - name: graphlan
+		owner: iuc
+		tool_panel_section_label: Graph/Display Data
+
+  - name: graphlan_annotate
+		owner: iuc
+		tool_panel_section_label: Graph/Display Data
+
+  - name: export2graphlan
+		owner: iuc
+		tool_panel_section_label: Graph/Display Data
+
+  - name: circos
+		owner: iuc
+		tool_panel_section_label: Graph/Display Data
+
+  - name: tsne
+		owner: iuc
+		tool_panel_section_label: Graph/Display Data
+
+  - name: krona_text
+		owner: saskia-hiltemann
+		tool_panel_section_label: Graph/Display Data
+
+  - name: venn_list
+		owner: peterjc
+		tool_panel_section_label: Graph/Display Data
+
+  - name: mummer
+		owner: peterjc
+		tool_panel_section_label: Graph/Display Data
+
+  - name: karyotype_plot
+		owner: guru-ananda
+		tool_panel_section_label: Graph/Display Data
+
   - name: retrieve_ensembl_bed
 		owner: galaxyp
 		tool_panel_section_label: Get Data
@@ -16,23 +1436,11 @@ tools:
 		owner: iuc
 		tool_panel_section_label: Text Manipulation
 
-  - name: replace_chromosome_names
-		owner: earlhaminst
-		tool_panel_section_label: Text Manipulation
-
   - name: sqlite_to_tabular
 		owner: iuc
 		tool_panel_section_label: Text Manipulation
 
   - name: filter_tabular
-		owner: iuc
-		tool_panel_section_label: Text Manipulation
-
-  - name: reshape2_melt
-		owner: iuc
-		tool_panel_section_label: Text Manipulation
-
-  - name: reshape2_cast
 		owner: iuc
 		tool_panel_section_label: Text Manipulation
 
@@ -56,14 +1464,6 @@ tools:
 		owner: mvdbeek
 		tool_panel_section_label: Text Manipulation
 
-  - name: regex_replace
-		owner: kellrott
-		tool_panel_section_label: Text Manipulation
-
-  - name: column_maker
-		owner: devteam
-		tool_panel_section_label: Text Manipulation
-
   - name: regex_find_replace
 		owner: jjohnson
 		tool_panel_section_label: Text Manipulation
@@ -71,10 +1471,6 @@ tools:
   - name: find_in_reference
 		owner: jjohnson
 		tool_panel_section_label: Text Manipulation
-
-  - name: filter_by_fasta_ids
-		owner: galaxyp
-		tool_panel_section_label: Filter and Sort
 
   - name: filter_by_substring_match
 		owner: alan-blakely
@@ -1879,10 +3275,6 @@ tools:
   - name: kinamine7_7
 		owner: jfb
 		tool_panel_section_label: Computational Chemistry
-
-  - name: collapse_collections
-		owner: nml
-		tool_panel_section_label: Collection Operations
 
   - name: methylkit
 		owner: rnateam
